@@ -7,7 +7,9 @@
           <text class="protocol-title">预约协议</text>
           <text class="protocol-subtitle">请仔细阅读以下内容</text>
         </view>
-        <rich-text :nodes="richText" class="richText"></rich-text>
+		<view class="richText-container">
+			<rich-text :nodes="richText" class="richText"></rich-text>
+		</view>
       </view>
     </view>
     
@@ -154,8 +156,11 @@
   opacity: 0.9;
 }
 
+.richText-container {
+	padding: 40rpx;
+}
+
 .richText {
-  padding: 40rpx;
   color: #333;
   font-size: 28rpx;
   line-height: 1.8;
