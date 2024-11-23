@@ -1,25 +1,39 @@
 <template>
 	<view class="container">
-		<!-- 标题栏 -->
-		<title-bar title="新闻资讯"></title-bar>
-		<!-- 内容区 -->
+		<title-bar title="新闻资讯" :transparent="true"></title-bar>
+		
 		<view class="container-main" v-if="loadEnd">
-			<view class="main-title">{{articleInfo.title}}</view>
-			<view class="main-tag flex justify-content-between align-items-center">
-				<view class="tag-item flex-item">
-					<text class="item-name" :style="{color: themeColor}">{{articleInfo.release}}</text>
-					<text class="item-time">{{articleInfo.createtime}}</text>
-				</view>
-				<view class="tag-item flex align-items-center">
-					<image class="item-icon" src="/static/see.png" mode="aspectFit"></image>
-					<text class="item-number">{{articleInfo.read_num}}</text>
-				</view>
+			<!-- 封面区域 -->
+			<view class="hero-section" v-if="articleInfo.image">
+				<image class="main-cover" :src="articleInfo.image" mode="aspectFill"></image>
+				<view class="overlay"></view>
 			</view>
-			<view class="main-content">
-				<mp-html :content="articleInfo.content"></mp-html>
+			
+			<!-- 内容区域 -->
+			<view class="content-wrapper">
+				<!-- 标题区 -->
+				<view class="main-title">{{articleInfo.title}}</view>
+				
+				<!-- 作者信息 - 简化版 -->
+				<view class="author-section">
+					<view class="left-info">
+						<text class="author-name" :style="{color: themeColor}">{{articleInfo.release}}</text>
+						<text class="dot">·</text>
+						<text class="publish-time">{{articleInfo.createtime}}</text>
+					</view>
+					<view class="read-count">
+						<image class="read-icon" src="/static/see.png" mode="aspectFit"></image>
+						<text>{{articleInfo.read_num}}阅读</text>
+					</view>
+				</view>
+				
+				<!-- 文章内容 -->
+				<view class="article-content">
+					<mp-html :content="articleInfo.content"></mp-html>
+				</view>
 			</view>
 		</view>
-		<!-- 底部导航 -->
+		
 		<tab-bar></tab-bar>
 	</view>
 </template>
@@ -144,49 +158,100 @@
 	}
 
 	.container {
-		.container-main {
-			padding: 32rpx;
-
-			.main-title {
-				font-weight: 600;
-				font-size: 36rpx;
-				line-height: 60rpx;
-				color: #5A5B6E;
+		.hero-section {
+			position: relative;
+			height: 460rpx;
+			overflow: hidden;
+			
+			.main-cover {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
 			}
-
-			.main-tag {
-				margin-top: 16rpx;
-
-				.tag-item {
-					.item-name {
+			
+			.overlay {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 120rpx;
+				background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+			}
+		}
+		
+		.content-wrapper {
+			position: relative;
+			padding: 40rpx;
+			background: #fff;
+			border-radius: 40rpx 40rpx 0 0;
+			box-shadow: 0 -4rpx 20rpx rgba(0,0,0,0.05);
+			
+			.main-title {
+				font-size: 44rpx;
+				font-weight: 700;
+				color: #333;
+				line-height: 1.4;
+				margin-bottom: 40rpx;
+				letter-spacing: 1rpx;
+			}
+			
+			.author-section {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-bottom: 40rpx;
+				padding-bottom: 30rpx;
+				border-bottom: 1px solid rgba(0,0,0,0.05);
+				
+				.left-info {
+					display: flex;
+					align-items: center;
+					
+					.author-name {
 						font-size: 28rpx;
-						line-height: 40rpx;
+						font-weight: 500;
 					}
-
-					.item-time {
+					
+					.dot {
+						margin: 0 12rpx;
+						color: #999;
+						font-weight: bold;
+					}
+					
+					.publish-time {
 						font-size: 28rpx;
-						line-height: 40rpx;
-						color: #8D929C;
-						margin-left: 16rpx;
+						color: #999;
 					}
-
-					.item-icon {
+				}
+				
+				.read-count {
+					display: flex;
+					align-items: center;
+					color: #999;
+					font-size: 26rpx;
+					
+					.read-icon {
 						width: 32rpx;
 						height: 32rpx;
-						margin-left: 16rpx;
-					}
-
-					.item-number {
-						margin-left: 8rpx;
-						font-size: 28rpx;
-						line-height: 40rpx;
-						color: #8D929C;
+						margin-right: 8rpx;
 					}
 				}
 			}
-
-			.main-content {
-				margin-top: 32rpx;
+			
+			.article-content {
+				line-height: 1.8;
+				color: #4a4a4a;
+				font-size: 30rpx;
+				
+				:deep(img) {
+					max-width: 100%;
+					border-radius: 12rpx;
+					margin: 20rpx 0;
+				}
+				
+				:deep(p) {
+					margin-bottom: 24rpx;
+				}
 			}
 		}
 	}

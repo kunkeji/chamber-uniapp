@@ -6,11 +6,13 @@
 		<view class="container-main" v-if="loadEnd">
 			<!-- 顶部导航 -->
 			<scroll-view scroll-x class="main-screen" :style="{top: titleBarHeight + 'px'}" v-if="screenList.length">
-				<view class="screen-item" @click="changeScreen(0)">
-					<view class="text" :class="{active: selectScreen == 0}">全部</view>
-				</view>
-				<view class="screen-item" v-for="item in screenList" :key="item.id" @click="changeScreen(item.id)">
-					<view class="text" :class="{active: selectScreen == item.id}">{{item.name}}</view>
+				<view class="screen-wrapper">
+					<view class="screen-item" @click="changeScreen(0)">
+						<view class="text" :class="{active: selectScreen == 0}">全部</view>
+					</view>
+					<view class="screen-item" v-for="item in screenList" :key="item.id" @click="changeScreen(item.id)">
+						<view class="text" :class="{active: selectScreen == item.id}">{{item.name}}</view>
+					</view>
 				</view>
 			</scroll-view>
 			<!-- 新闻列表 -->
@@ -207,37 +209,78 @@
 <style lang="scss">
 	.container {
 		.container-main {
+			background: #f5f6fa;
+			min-height: 100vh;
+			
 			.main-screen {
 				white-space: nowrap;
 				background: #ffffff;
 				position: sticky;
 				top: 0;
 				z-index: 99;
+				box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.05);
+				
+				.screen-wrapper {
+					padding: 0 16rpx;
+					display: flex;
+					
+					.screen-item {
+						padding: 0 24rpx;
+						display: inline-flex;
+						justify-content: center;
+						min-width: 160rpx;
+						transition: all 0.3s;
+						
+						&:active {
+							opacity: 0.7;
+						}
 
-				.screen-item {
-					padding: 0 24rpx;
-					display: inline-flex;
-					justify-content: center;
-					min-width: 25%;
+						.text {
+							padding: 24rpx 0;
+							color: #666;
+							font-size: 28rpx;
+							line-height: 40rpx;
+							text-align: center;
+							position: relative;
+							font-weight: 500;
+							transition: all 0.3s;
 
-					.text {
-						padding: 36rpx 0;
-						color: #5A5B6E;
-						font-size: 28rpx;
-						line-height: 40rpx;
-						text-align: center;
-						border-bottom: 4rpx solid transparent;
-
-						&.active {
-							color: var(--theme-color);
-							border-color: var(--theme-color);
+							&.active {
+								color: var(--theme-color);
+								font-weight: 600;
+								
+								&::after {
+									content: '';
+									position: absolute;
+									bottom: 0;
+									left: 50%;
+									transform: translateX(-50%);
+									width: 40rpx;
+									height: 4rpx;
+									background: var(--theme-color);
+									border-radius: 4rpx;
+								}
+							}
 						}
 					}
 				}
 			}
 
 			.main-list {
-				padding: 32rpx;
+				padding: 24rpx;
+				
+				:deep(.article-item) {
+					background: #fff;
+					border-radius: 16rpx;
+					margin-bottom: 24rpx;
+					padding: 24rpx;
+					box-shadow: 0 2rpx 12rpx rgba(0,0,0,0.04);
+					transition: all 0.3s;
+					
+					&:active {
+						transform: scale(0.98);
+					}
+				}
 			}
 		}
 	}
