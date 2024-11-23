@@ -29,7 +29,7 @@
 					<view class="main-column">
 						<view class="column-title flex align-items-center">
 							<view class="title flex-item">会员风采</view>
-							<view class="btn" @click="toMember()">more+</view>
+							<view class="btn" @click="toMember()">更多+</view>
 						</view>
 						<view class="column-box">
 							<member-item ref="memberItem" :show-data="memberList" @scrolltolower="loadNextMember" v-if="memberList.length"></member-item>
@@ -40,7 +40,7 @@
 					<view class="main-column">
 						<view class="column-title flex align-items-center">
 							<view class="title flex-item">{{organize}}活动</view>
-							<view class="btn" @click="toActivity()">more+</view>
+							<view class="btn" @click="toActivity()">更多+</view>
 						</view>
 						<view class="column-box">
 							<activity-item :show-data="activityList" show-type="1" v-if="activityList.length"></activity-item>
@@ -51,7 +51,7 @@
 					<view class="main-column">
 						<view class="column-title flex align-items-center">
 							<view class="title flex-item">活动接龙</view>
-							<view class="btn" @click="toChains()">more+</view>
+							<view class="btn" @click="toChains()">更多+</view>
 						</view>
 						<view class="column-box">
 							<chains-item :show-data="chainsList" v-if="chainsList.length" @setShareData="setShareData"></chains-item>
@@ -62,7 +62,7 @@
 					<view class="main-column">
 						<view class="column-title flex align-items-center">
 							<view class="title flex-item">{{organize}}相册</view>
-							<view class="btn" @click="toAlbum()">more+</view>
+							<view class="btn" @click="toAlbum()">更多+</view>
 						</view>
 						<view class="column-box">
 							<album-item :show-data="albumList" v-if="albumList.length"></album-item>
@@ -73,7 +73,7 @@
 					<view class="main-column">
 						<view class="column-title flex align-items-center">
 							<view class="title flex-item">商城商品</view>
-							<view class="btn" @click="toMall()">more+</view>
+							<view class="btn" @click="toMall()">更多+</view>
 						</view>
 						<view class="column-box">
 							<goods-item :show-data="goodsList" v-if="goodsList.length"></goods-item>
@@ -84,7 +84,7 @@
 					<view class="main-column">
 						<view class="column-title flex align-items-center">
 							<view class="title flex-item">新闻资讯</view>
-							<view class="btn" @click="toArticle()">more+</view>
+							<view class="btn" @click="toArticle()">更多+</view>
 						</view>
 						<scroll-view scroll-x class="column-screen">
 							<view class="screen-item" :class="{active: articleSelect == item.id}" v-for="item in articleCategory" :key="item.id" @click="changeArticle(item.id)">{{item.name}}</view>
@@ -601,20 +601,21 @@
 		.container-main {
 			position: relative;
 			z-index: 8;
-			border-radius: 32rpx 32rpx 0 0;
+			border-radius: 16rpx 16rpx 0 0;
 			background: #F6F7FB;
-			margin-top: -40rpx;
-			padding: 32rpx;
+			margin-top: -30rpx;
+			padding: 20rpx 16rpx;
 
 			.main-card {
-				border-radius: 16rpx;
+				border-radius: 12rpx;
 				background: #ffffff;
-				padding: 16rpx 32rpx;
+				padding: 12rpx 20rpx;
+				box-shadow: 0 2rpx 8rpx rgba(0,0,0,0.05);
 
 				.card-image {
-					width: 80rpx;
-					height: 80rpx;
-					border-radius: 8rpx;
+					width: 72rpx;
+					height: 72rpx;
+					border-radius: 6rpx;
 				}
 
 				.card-title {
@@ -630,29 +631,33 @@
 					color: #ffffff;
 					font-size: 24rpx;
 					line-height: 36rpx;
-					padding: 14rpx 40rpx;
-					border-radius: 16rpx;
+					padding: 10rpx 32rpx;
+					border-radius: 12rpx;
 					background: var(--theme-color);
 				}
 			}
 
 			.main-menu {
-				border-radius: 16rpx;
+				border-radius: 12rpx;
 				background: #ffffff;
-				padding: 32rpx 8rpx 48rpx;
-				margin-top: 32rpx;
+				padding: 24rpx 8rpx 32rpx;
+				margin-top: 20rpx;
+				box-shadow: 0 2rpx 8rpx rgba(0,0,0,0.05);
 			}
 
 			.main-column {
-				border-radius: 16rpx;
+				border-radius: 12rpx;
 				background: #ffffff;
-				padding: 32rpx;
-				margin-top: 32rpx;
+				padding: 20rpx;
+				margin-top: 20rpx;
+				box-shadow: 0 2rpx 8rpx rgba(0,0,0,0.05);
 
 				.column-title {
+					margin-bottom: 16rpx;
+
 					.title {
 						color: #5A5B6E;
-						font-size: 32rpx;
+						font-size: 30rpx;
 						font-weight: 600;
 						line-height: 44rpx;
 					}
@@ -660,25 +665,33 @@
 					.btn {
 						font-weight: 600;
 						color: var(--theme-color);
-						font-size: 28rpx;
+						font-size: 26rpx;
 						line-height: 40rpx;
+						opacity: 0.9;
+						transition: opacity 0.3s;
+
+						&:active {
+							opacity: 0.7;
+						}
 					}
 				}
 
 				.column-box {
-					margin-top: 32rpx;
+					margin-top: 24rpx;
 				}
 
 				.column-screen {
 					white-space: nowrap;
-					margin-top: 32rpx;
+					margin-top: 24rpx;
+					padding: 0 4rpx;
 
 					.screen-item {
 						display: inline-block;
 						color: #5A5B6E;
-						font-size: 28rpx;
+						font-size: 26rpx;
 						line-height: 40rpx;
-						padding-left: 32rpx;
+						padding-left: 24rpx;
+						transition: all 0.3s;
 
 						&:first-child {
 							padding-left: 0;
@@ -687,7 +700,7 @@
 						&.active {
 							color: var(--theme-color);
 							font-weight: 600;
-							font-size: 32rpx;
+							font-size: 30rpx;
 							line-height: 44rpx;
 						}
 					}

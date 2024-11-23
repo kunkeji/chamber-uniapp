@@ -27,20 +27,21 @@
 .container .container-main {
   position: relative;
   z-index: 8;
-  border-radius: 32rpx 32rpx 0 0;
+  border-radius: 16rpx 16rpx 0 0;
   background: #F6F7FB;
-  margin-top: -40rpx;
-  padding: 32rpx;
+  margin-top: -30rpx;
+  padding: 20rpx 16rpx;
 }
 .container .container-main .main-card {
-  border-radius: 16rpx;
+  border-radius: 12rpx;
   background: #ffffff;
-  padding: 16rpx 32rpx;
+  padding: 12rpx 20rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.05);
 }
 .container .container-main .main-card .card-image {
-  width: 80rpx;
-  height: 80rpx;
-  border-radius: 8rpx;
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 6rpx;
 }
 .container .container-main .main-card .card-title {
   margin-left: 16rpx;
@@ -54,47 +55,59 @@
   color: #ffffff;
   font-size: 24rpx;
   line-height: 36rpx;
-  padding: 14rpx 40rpx;
-  border-radius: 16rpx;
+  padding: 10rpx 32rpx;
+  border-radius: 12rpx;
   background: var(--theme-color);
 }
 .container .container-main .main-menu {
-  border-radius: 16rpx;
+  border-radius: 12rpx;
   background: #ffffff;
-  padding: 32rpx 8rpx 48rpx;
-  margin-top: 32rpx;
+  padding: 24rpx 8rpx 32rpx;
+  margin-top: 20rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.05);
 }
 .container .container-main .main-column {
-  border-radius: 16rpx;
+  border-radius: 12rpx;
   background: #ffffff;
-  padding: 32rpx;
-  margin-top: 32rpx;
+  padding: 20rpx;
+  margin-top: 20rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.05);
+}
+.container .container-main .main-column .column-title {
+  margin-bottom: 16rpx;
 }
 .container .container-main .main-column .column-title .title {
   color: #5A5B6E;
-  font-size: 32rpx;
+  font-size: 30rpx;
   font-weight: 600;
   line-height: 44rpx;
 }
 .container .container-main .main-column .column-title .btn {
   font-weight: 600;
   color: var(--theme-color);
-  font-size: 28rpx;
+  font-size: 26rpx;
   line-height: 40rpx;
+  opacity: 0.9;
+  transition: opacity 0.3s;
+}
+.container .container-main .main-column .column-title .btn:active {
+  opacity: 0.7;
 }
 .container .container-main .main-column .column-box {
-  margin-top: 32rpx;
+  margin-top: 24rpx;
 }
 .container .container-main .main-column .column-screen {
   white-space: nowrap;
-  margin-top: 32rpx;
+  margin-top: 24rpx;
+  padding: 0 4rpx;
 }
 .container .container-main .main-column .column-screen .screen-item {
   display: inline-block;
   color: #5A5B6E;
-  font-size: 28rpx;
+  font-size: 26rpx;
   line-height: 40rpx;
-  padding-left: 32rpx;
+  padding-left: 24rpx;
+  transition: all 0.3s;
 }
 .container .container-main .main-column .column-screen .screen-item:first-child {
   padding-left: 0;
@@ -102,7 +115,7 @@
 .container .container-main .main-column .column-screen .screen-item.active {
   color: var(--theme-color);
   font-weight: 600;
-  font-size: 32rpx;
+  font-size: 30rpx;
   line-height: 44rpx;
 }
 

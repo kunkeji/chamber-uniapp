@@ -137,7 +137,7 @@ exports.default = void 0;
 var _parser = _interopRequireDefault(__webpack_require__(/*! ./parser */ 998));
 var node = function node() {
   __webpack_require__.e(/*! require.ensure | uni_modules/mp-html/components/mp-html/node/node */ "uni_modules/mp-html/components/mp-html/node/node").then((function () {
-    return resolve(__webpack_require__(/*! ./node/node */ 1269));
+    return resolve(__webpack_require__(/*! ./node/node */ 1277));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var plugins = [];

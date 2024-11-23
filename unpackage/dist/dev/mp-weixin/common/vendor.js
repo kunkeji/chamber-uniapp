@@ -58,6 +58,510 @@ module.exports = _nonIterableRest, module.exports.__esModule = true, module.expo
 
 /***/ }),
 
+/***/ 1055:
+/*!**************************************************************************************************************!*\
+  !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/uni-icons/components/uni-icons/uniicons_file_vue.js ***!
+  \**************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.fontData = void 0;
+var fontData = [{
+  "font_class": "arrow-down",
+  "unicode": "\uE6BE"
+}, {
+  "font_class": "arrow-left",
+  "unicode": "\uE6BC"
+}, {
+  "font_class": "arrow-right",
+  "unicode": "\uE6BB"
+}, {
+  "font_class": "arrow-up",
+  "unicode": "\uE6BD"
+}, {
+  "font_class": "auth",
+  "unicode": "\uE6AB"
+}, {
+  "font_class": "auth-filled",
+  "unicode": "\uE6CC"
+}, {
+  "font_class": "back",
+  "unicode": "\uE6B9"
+}, {
+  "font_class": "bars",
+  "unicode": "\uE627"
+}, {
+  "font_class": "calendar",
+  "unicode": "\uE6A0"
+}, {
+  "font_class": "calendar-filled",
+  "unicode": "\uE6C0"
+}, {
+  "font_class": "camera",
+  "unicode": "\uE65A"
+}, {
+  "font_class": "camera-filled",
+  "unicode": "\uE658"
+}, {
+  "font_class": "cart",
+  "unicode": "\uE631"
+}, {
+  "font_class": "cart-filled",
+  "unicode": "\uE6D0"
+}, {
+  "font_class": "chat",
+  "unicode": "\uE65D"
+}, {
+  "font_class": "chat-filled",
+  "unicode": "\uE659"
+}, {
+  "font_class": "chatboxes",
+  "unicode": "\uE696"
+}, {
+  "font_class": "chatboxes-filled",
+  "unicode": "\uE692"
+}, {
+  "font_class": "chatbubble",
+  "unicode": "\uE697"
+}, {
+  "font_class": "chatbubble-filled",
+  "unicode": "\uE694"
+}, {
+  "font_class": "checkbox",
+  "unicode": "\uE62B"
+}, {
+  "font_class": "checkbox-filled",
+  "unicode": "\uE62C"
+}, {
+  "font_class": "checkmarkempty",
+  "unicode": "\uE65C"
+}, {
+  "font_class": "circle",
+  "unicode": "\uE65B"
+}, {
+  "font_class": "circle-filled",
+  "unicode": "\uE65E"
+}, {
+  "font_class": "clear",
+  "unicode": "\uE66D"
+}, {
+  "font_class": "close",
+  "unicode": "\uE673"
+}, {
+  "font_class": "closeempty",
+  "unicode": "\uE66C"
+}, {
+  "font_class": "cloud-download",
+  "unicode": "\uE647"
+}, {
+  "font_class": "cloud-download-filled",
+  "unicode": "\uE646"
+}, {
+  "font_class": "cloud-upload",
+  "unicode": "\uE645"
+}, {
+  "font_class": "cloud-upload-filled",
+  "unicode": "\uE648"
+}, {
+  "font_class": "color",
+  "unicode": "\uE6CF"
+}, {
+  "font_class": "color-filled",
+  "unicode": "\uE6C9"
+}, {
+  "font_class": "compose",
+  "unicode": "\uE67F"
+}, {
+  "font_class": "contact",
+  "unicode": "\uE693"
+}, {
+  "font_class": "contact-filled",
+  "unicode": "\uE695"
+}, {
+  "font_class": "down",
+  "unicode": "\uE6B8"
+}, {
+  "font_class": "bottom",
+  "unicode": "\uE6B8"
+}, {
+  "font_class": "download",
+  "unicode": "\uE68D"
+}, {
+  "font_class": "download-filled",
+  "unicode": "\uE681"
+}, {
+  "font_class": "email",
+  "unicode": "\uE69E"
+}, {
+  "font_class": "email-filled",
+  "unicode": "\uE69A"
+}, {
+  "font_class": "eye",
+  "unicode": "\uE651"
+}, {
+  "font_class": "eye-filled",
+  "unicode": "\uE66A"
+}, {
+  "font_class": "eye-slash",
+  "unicode": "\uE6B3"
+}, {
+  "font_class": "eye-slash-filled",
+  "unicode": "\uE6B4"
+}, {
+  "font_class": "fire",
+  "unicode": "\uE6A1"
+}, {
+  "font_class": "fire-filled",
+  "unicode": "\uE6C5"
+}, {
+  "font_class": "flag",
+  "unicode": "\uE65F"
+}, {
+  "font_class": "flag-filled",
+  "unicode": "\uE660"
+}, {
+  "font_class": "folder-add",
+  "unicode": "\uE6A9"
+}, {
+  "font_class": "folder-add-filled",
+  "unicode": "\uE6C8"
+}, {
+  "font_class": "font",
+  "unicode": "\uE6A3"
+}, {
+  "font_class": "forward",
+  "unicode": "\uE6BA"
+}, {
+  "font_class": "gear",
+  "unicode": "\uE664"
+}, {
+  "font_class": "gear-filled",
+  "unicode": "\uE661"
+}, {
+  "font_class": "gift",
+  "unicode": "\uE6A4"
+}, {
+  "font_class": "gift-filled",
+  "unicode": "\uE6C4"
+}, {
+  "font_class": "hand-down",
+  "unicode": "\uE63D"
+}, {
+  "font_class": "hand-down-filled",
+  "unicode": "\uE63C"
+}, {
+  "font_class": "hand-up",
+  "unicode": "\uE63F"
+}, {
+  "font_class": "hand-up-filled",
+  "unicode": "\uE63E"
+}, {
+  "font_class": "headphones",
+  "unicode": "\uE630"
+}, {
+  "font_class": "heart",
+  "unicode": "\uE639"
+}, {
+  "font_class": "heart-filled",
+  "unicode": "\uE641"
+}, {
+  "font_class": "help",
+  "unicode": "\uE679"
+}, {
+  "font_class": "help-filled",
+  "unicode": "\uE674"
+}, {
+  "font_class": "home",
+  "unicode": "\uE662"
+}, {
+  "font_class": "home-filled",
+  "unicode": "\uE663"
+}, {
+  "font_class": "image",
+  "unicode": "\uE670"
+}, {
+  "font_class": "image-filled",
+  "unicode": "\uE678"
+}, {
+  "font_class": "images",
+  "unicode": "\uE650"
+}, {
+  "font_class": "images-filled",
+  "unicode": "\uE64B"
+}, {
+  "font_class": "info",
+  "unicode": "\uE669"
+}, {
+  "font_class": "info-filled",
+  "unicode": "\uE649"
+}, {
+  "font_class": "left",
+  "unicode": "\uE6B7"
+}, {
+  "font_class": "link",
+  "unicode": "\uE6A5"
+}, {
+  "font_class": "list",
+  "unicode": "\uE644"
+}, {
+  "font_class": "location",
+  "unicode": "\uE6AE"
+}, {
+  "font_class": "location-filled",
+  "unicode": "\uE6AF"
+}, {
+  "font_class": "locked",
+  "unicode": "\uE66B"
+}, {
+  "font_class": "locked-filled",
+  "unicode": "\uE668"
+}, {
+  "font_class": "loop",
+  "unicode": "\uE633"
+}, {
+  "font_class": "mail-open",
+  "unicode": "\uE643"
+}, {
+  "font_class": "mail-open-filled",
+  "unicode": "\uE63A"
+}, {
+  "font_class": "map",
+  "unicode": "\uE667"
+}, {
+  "font_class": "map-filled",
+  "unicode": "\uE666"
+}, {
+  "font_class": "map-pin",
+  "unicode": "\uE6AD"
+}, {
+  "font_class": "map-pin-ellipse",
+  "unicode": "\uE6AC"
+}, {
+  "font_class": "medal",
+  "unicode": "\uE6A2"
+}, {
+  "font_class": "medal-filled",
+  "unicode": "\uE6C3"
+}, {
+  "font_class": "mic",
+  "unicode": "\uE671"
+}, {
+  "font_class": "mic-filled",
+  "unicode": "\uE677"
+}, {
+  "font_class": "micoff",
+  "unicode": "\uE67E"
+}, {
+  "font_class": "micoff-filled",
+  "unicode": "\uE6B0"
+}, {
+  "font_class": "minus",
+  "unicode": "\uE66F"
+}, {
+  "font_class": "minus-filled",
+  "unicode": "\uE67D"
+}, {
+  "font_class": "more",
+  "unicode": "\uE64D"
+}, {
+  "font_class": "more-filled",
+  "unicode": "\uE64E"
+}, {
+  "font_class": "navigate",
+  "unicode": "\uE66E"
+}, {
+  "font_class": "navigate-filled",
+  "unicode": "\uE67A"
+}, {
+  "font_class": "notification",
+  "unicode": "\uE6A6"
+}, {
+  "font_class": "notification-filled",
+  "unicode": "\uE6C1"
+}, {
+  "font_class": "paperclip",
+  "unicode": "\uE652"
+}, {
+  "font_class": "paperplane",
+  "unicode": "\uE672"
+}, {
+  "font_class": "paperplane-filled",
+  "unicode": "\uE675"
+}, {
+  "font_class": "person",
+  "unicode": "\uE699"
+}, {
+  "font_class": "person-filled",
+  "unicode": "\uE69D"
+}, {
+  "font_class": "personadd",
+  "unicode": "\uE69F"
+}, {
+  "font_class": "personadd-filled",
+  "unicode": "\uE698"
+}, {
+  "font_class": "personadd-filled-copy",
+  "unicode": "\uE6D1"
+}, {
+  "font_class": "phone",
+  "unicode": "\uE69C"
+}, {
+  "font_class": "phone-filled",
+  "unicode": "\uE69B"
+}, {
+  "font_class": "plus",
+  "unicode": "\uE676"
+}, {
+  "font_class": "plus-filled",
+  "unicode": "\uE6C7"
+}, {
+  "font_class": "plusempty",
+  "unicode": "\uE67B"
+}, {
+  "font_class": "pulldown",
+  "unicode": "\uE632"
+}, {
+  "font_class": "pyq",
+  "unicode": "\uE682"
+}, {
+  "font_class": "qq",
+  "unicode": "\uE680"
+}, {
+  "font_class": "redo",
+  "unicode": "\uE64A"
+}, {
+  "font_class": "redo-filled",
+  "unicode": "\uE655"
+}, {
+  "font_class": "refresh",
+  "unicode": "\uE657"
+}, {
+  "font_class": "refresh-filled",
+  "unicode": "\uE656"
+}, {
+  "font_class": "refreshempty",
+  "unicode": "\uE6BF"
+}, {
+  "font_class": "reload",
+  "unicode": "\uE6B2"
+}, {
+  "font_class": "right",
+  "unicode": "\uE6B5"
+}, {
+  "font_class": "scan",
+  "unicode": "\uE62A"
+}, {
+  "font_class": "search",
+  "unicode": "\uE654"
+}, {
+  "font_class": "settings",
+  "unicode": "\uE653"
+}, {
+  "font_class": "settings-filled",
+  "unicode": "\uE6CE"
+}, {
+  "font_class": "shop",
+  "unicode": "\uE62F"
+}, {
+  "font_class": "shop-filled",
+  "unicode": "\uE6CD"
+}, {
+  "font_class": "smallcircle",
+  "unicode": "\uE67C"
+}, {
+  "font_class": "smallcircle-filled",
+  "unicode": "\uE665"
+}, {
+  "font_class": "sound",
+  "unicode": "\uE684"
+}, {
+  "font_class": "sound-filled",
+  "unicode": "\uE686"
+}, {
+  "font_class": "spinner-cycle",
+  "unicode": "\uE68A"
+}, {
+  "font_class": "staff",
+  "unicode": "\uE6A7"
+}, {
+  "font_class": "staff-filled",
+  "unicode": "\uE6CB"
+}, {
+  "font_class": "star",
+  "unicode": "\uE688"
+}, {
+  "font_class": "star-filled",
+  "unicode": "\uE68F"
+}, {
+  "font_class": "starhalf",
+  "unicode": "\uE683"
+}, {
+  "font_class": "trash",
+  "unicode": "\uE687"
+}, {
+  "font_class": "trash-filled",
+  "unicode": "\uE685"
+}, {
+  "font_class": "tune",
+  "unicode": "\uE6AA"
+}, {
+  "font_class": "tune-filled",
+  "unicode": "\uE6CA"
+}, {
+  "font_class": "undo",
+  "unicode": "\uE64F"
+}, {
+  "font_class": "undo-filled",
+  "unicode": "\uE64C"
+}, {
+  "font_class": "up",
+  "unicode": "\uE6B6"
+}, {
+  "font_class": "top",
+  "unicode": "\uE6B6"
+}, {
+  "font_class": "upload",
+  "unicode": "\uE690"
+}, {
+  "font_class": "upload-filled",
+  "unicode": "\uE68E"
+}, {
+  "font_class": "videocam",
+  "unicode": "\uE68C"
+}, {
+  "font_class": "videocam-filled",
+  "unicode": "\uE689"
+}, {
+  "font_class": "vip",
+  "unicode": "\uE6A8"
+}, {
+  "font_class": "vip-filled",
+  "unicode": "\uE6C6"
+}, {
+  "font_class": "wallet",
+  "unicode": "\uE6B1"
+}, {
+  "font_class": "wallet-filled",
+  "unicode": "\uE6C2"
+}, {
+  "font_class": "weibo",
+  "unicode": "\uE68B"
+}, {
+  "font_class": "weixin",
+  "unicode": "\uE691"
+}];
+
+// export const fontData = JSON.parse<IconsDataItem>(fontDataJson)
+exports.fontData = fontData;
+
+/***/ }),
+
 /***/ 11:
 /*!***************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/defineProperty.js ***!
@@ -101,7 +605,7 @@ module.exports = toPropertyKey, module.exports.__esModule = true, module.exports
 
 /***/ }),
 
-/***/ 1257:
+/***/ 1265:
 /*!********************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/uv-ui-tools/libs/mixin/mpMixin.js ***!
   \********************************************************************************************/
@@ -125,7 +629,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 1258:
+/***/ 1266:
 /*!******************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/uv-ui-tools/libs/mixin/mixin.js ***!
   \******************************************************************************************/
@@ -142,11 +646,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
-var index = _interopRequireWildcard(__webpack_require__(/*! ../function/index.js */ 1259));
-var test = _interopRequireWildcard(__webpack_require__(/*! ../function/test.js */ 1260));
-var _route = _interopRequireDefault(__webpack_require__(/*! ../util/route.js */ 1263));
-var _debounce = _interopRequireDefault(__webpack_require__(/*! ../function/debounce.js */ 1264));
-var _throttle = _interopRequireDefault(__webpack_require__(/*! ../function/throttle.js */ 1265));
+var index = _interopRequireWildcard(__webpack_require__(/*! ../function/index.js */ 1267));
+var test = _interopRequireWildcard(__webpack_require__(/*! ../function/test.js */ 1268));
+var _route = _interopRequireDefault(__webpack_require__(/*! ../util/route.js */ 1271));
+var _debounce = _interopRequireDefault(__webpack_require__(/*! ../function/debounce.js */ 1272));
+var _throttle = _interopRequireDefault(__webpack_require__(/*! ../function/throttle.js */ 1273));
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
@@ -327,7 +831,7 @@ exports.default = _default2;
 
 /***/ }),
 
-/***/ 1259:
+/***/ 1267:
 /*!*********************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/uv-ui-tools/libs/function/index.js ***!
   \*********************************************************************************************/
@@ -373,8 +877,8 @@ exports.trim = trim;
 exports.type2icon = type2icon;
 var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ 5));
 var _typeof2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/typeof */ 13));
-var _test = __webpack_require__(/*! ./test.js */ 1260);
-var _digit = __webpack_require__(/*! ./digit.js */ 1261);
+var _test = __webpack_require__(/*! ./test.js */ 1268);
+var _digit = __webpack_require__(/*! ./digit.js */ 1269);
 /**
  * @description 如果value小于min，取min；如果value大于max，取max
  * @param {number} min
@@ -1126,7 +1630,7 @@ function setConfig(_ref5) {
 
 /***/ }),
 
-/***/ 1260:
+/***/ 1268:
 /*!********************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/uv-ui-tools/libs/function/test.js ***!
   \********************************************************************************************/
@@ -1427,7 +1931,7 @@ function regExp(o) {
 
 /***/ }),
 
-/***/ 1261:
+/***/ 1269:
 /*!*********************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/uv-ui-tools/libs/function/digit.js ***!
   \*********************************************************************************************/
@@ -1448,7 +1952,7 @@ exports.minus = minus;
 exports.plus = plus;
 exports.round = round;
 exports.times = times;
-var _toArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/toArray */ 1262));
+var _toArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/toArray */ 1270));
 var _boundaryCheckingState = true; // 是否进行越界检查的全局开关
 
 /**
@@ -1630,7 +2134,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 1262:
+/***/ 1270:
 /*!********************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/toArray.js ***!
   \********************************************************/
@@ -1648,7 +2152,7 @@ module.exports = _toArray, module.exports.__esModule = true, module.exports["def
 
 /***/ }),
 
-/***/ 1263:
+/***/ 1271:
 /*!*****************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/uv-ui-tools/libs/util/route.js ***!
   \*****************************************************************************************/
@@ -1667,7 +2171,7 @@ var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 58));
 var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 23));
 var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ 24));
-var _index = __webpack_require__(/*! @/uni_modules/uv-ui-tools/libs/function/index.js */ 1259);
+var _index = __webpack_require__(/*! @/uni_modules/uv-ui-tools/libs/function/index.js */ 1267);
 /**
  * 路由跳转方法，该方法相对于直接使用uni.xxx的好处是使用更加简单快捷
  * 并且带有路由拦截功能
@@ -1841,7 +2345,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 1264:
+/***/ 1272:
 /*!************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/uv-ui-tools/libs/function/debounce.js ***!
   \************************************************************************************************/
@@ -1889,7 +2393,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 1265:
+/***/ 1273:
 /*!************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/uv-ui-tools/libs/function/throttle.js ***!
   \************************************************************************************************/
@@ -1939,7 +2443,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 1266:
+/***/ 1274:
 /*!********************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/uv-waterfall/components/uv-waterfall/props.js ***!
   \********************************************************************************************************/
@@ -2026,7 +2530,7 @@ exports.default = _default2;
 
 /***/ }),
 
-/***/ 1283:
+/***/ 1291:
 /*!***************************************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/uni-datetime-picker/components/uni-datetime-picker/i18n/index.js ***!
   \***************************************************************************************************************************/
@@ -2041,9 +2545,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _en = _interopRequireDefault(__webpack_require__(/*! ./en.json */ 1284));
-var _zhHans = _interopRequireDefault(__webpack_require__(/*! ./zh-Hans.json */ 1285));
-var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 1286));
+var _en = _interopRequireDefault(__webpack_require__(/*! ./en.json */ 1292));
+var _zhHans = _interopRequireDefault(__webpack_require__(/*! ./zh-Hans.json */ 1293));
+var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 1294));
 var _default = {
   en: _en.default,
   'zh-Hans': _zhHans.default,
@@ -2053,7 +2557,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 1284:
+/***/ 1292:
 /*!**************************************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/uni-datetime-picker/components/uni-datetime-picker/i18n/en.json ***!
   \**************************************************************************************************************************/
@@ -2064,7 +2568,7 @@ module.exports = JSON.parse("{\"uni-datetime-picker.selectDate\":\"select date\"
 
 /***/ }),
 
-/***/ 1285:
+/***/ 1293:
 /*!*******************************************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/uni-datetime-picker/components/uni-datetime-picker/i18n/zh-Hans.json ***!
   \*******************************************************************************************************************************/
@@ -2075,7 +2579,7 @@ module.exports = JSON.parse("{\"uni-datetime-picker.selectDate\":\"选择日期\
 
 /***/ }),
 
-/***/ 1286:
+/***/ 1294:
 /*!*******************************************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/uni-datetime-picker/components/uni-datetime-picker/i18n/zh-Hant.json ***!
   \*******************************************************************************************************************************/
@@ -2086,7 +2590,7 @@ module.exports = JSON.parse("{\"uni-datetime-picker.selectDate\":\"選擇日期\
 
 /***/ }),
 
-/***/ 1287:
+/***/ 1295:
 /*!*********************************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/uni-datetime-picker/components/uni-datetime-picker/util.js ***!
   \*********************************************************************************************************************/
@@ -2556,7 +3060,7 @@ module.exports = _typeof, module.exports.__esModule = true, module.exports["defa
 
 /***/ }),
 
-/***/ 1316:
+/***/ 1324:
 /*!***************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/Sansnn-uQRCode/js_sdk/uqrcode/uqrcode.js ***!
   \***************************************************************************************************/
@@ -3813,7 +4317,7 @@ f.prototype = {
 
 /***/ }),
 
-/***/ 1317:
+/***/ 1325:
 /*!*****************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/Sansnn-uQRCode/common/queue.js ***!
   \*****************************************************************************************/
@@ -3870,7 +4374,7 @@ exports.queueLoadImage = queueLoadImage;
 
 /***/ }),
 
-/***/ 1318:
+/***/ 1326:
 /*!*****************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/Sansnn-uQRCode/common/cache.js ***!
   \*****************************************************************************************/
@@ -3889,7 +4393,7 @@ exports.cacheImageList = cacheImageList;
 
 /***/ }),
 
-/***/ 1333:
+/***/ 1341:
 /*!*******************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/utils/utils.js ***!
   \*******************************************************************************************/
@@ -3936,7 +4440,7 @@ function requestAnimationFrame(cb) {
 
 /***/ }),
 
-/***/ 1334:
+/***/ 1342:
 /*!***********************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/vue2/get-params.js ***!
   \***********************************************************************************************/
@@ -3951,9 +4455,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.getParams = getParams;
-var _index = _interopRequireDefault(__webpack_require__(/*! ../../index.js */ 1335));
-var _utils = __webpack_require__(/*! ./utils.js */ 1412);
-var _paramsList = __webpack_require__(/*! ./params-list.js */ 1413);
+var _index = _interopRequireDefault(__webpack_require__(/*! ../../index.js */ 1343));
+var _utils = __webpack_require__(/*! ./utils.js */ 1420);
+var _paramsList = __webpack_require__(/*! ./params-list.js */ 1421);
 function getParams() {
   var obj = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
   var params = {
@@ -4001,7 +4505,7 @@ function getParams() {
 
 /***/ }),
 
-/***/ 1335:
+/***/ 1343:
 /*!********************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/index.js ***!
   \********************************************************************************/
@@ -4027,30 +4531,30 @@ Object.defineProperty(exports, "default", {
     return _core.default;
   }
 });
-var _core = _interopRequireDefault(__webpack_require__(/*! ./libs/core.js */ 1336));
-var _autoplay = _interopRequireDefault(__webpack_require__(/*! ./modules/autoplay/autoplay.js */ 1391));
-var _freeMode = _interopRequireDefault(__webpack_require__(/*! ./modules/free-mode/free-mode.js */ 1392));
-var _effectFade = _interopRequireDefault(__webpack_require__(/*! ./modules/effect-fade/effect-fade.js */ 1393));
-var _effectCube = _interopRequireDefault(__webpack_require__(/*! ./modules/effect-cube/effect-cube.js */ 1397));
-var _effectCoverflow = _interopRequireDefault(__webpack_require__(/*! ./modules/effect-coverflow/effect-coverflow.js */ 1398));
-var _effectFlip = _interopRequireDefault(__webpack_require__(/*! ./modules/effect-flip/effect-flip.js */ 1399));
-var _effectCards = _interopRequireDefault(__webpack_require__(/*! ./modules/effect-cards/effect-cards.js */ 1400));
-var _effectCreative = _interopRequireDefault(__webpack_require__(/*! ./modules/effect-creative/effect-creative.js */ 1401));
-var _effectPanorama = _interopRequireDefault(__webpack_require__(/*! ./modules/effect-panorama/effect-panorama.js */ 1402));
-var _effectCarousel = _interopRequireDefault(__webpack_require__(/*! ./modules/effect-carousel/effect-carousel.js */ 1403));
-var _navigation = _interopRequireDefault(__webpack_require__(/*! ./modules/navigation/navigation.js */ 1404));
-var _pagination = _interopRequireDefault(__webpack_require__(/*! ./modules/pagination/pagination.js */ 1405));
-var _thumbs = _interopRequireDefault(__webpack_require__(/*! ./modules/thumbs/thumbs.js */ 1407));
-var _scrollbar = _interopRequireDefault(__webpack_require__(/*! ./modules/scrollbar/scrollbar.js */ 1408));
-var _virtual = _interopRequireDefault(__webpack_require__(/*! ./modules/virtual/virtual.js */ 1409));
-var _controller = _interopRequireDefault(__webpack_require__(/*! ./modules/controller/controller.js */ 1410));
-var _willChange = _interopRequireDefault(__webpack_require__(/*! ./modules/will-change/will-change.js */ 1411));
+var _core = _interopRequireDefault(__webpack_require__(/*! ./libs/core.js */ 1344));
+var _autoplay = _interopRequireDefault(__webpack_require__(/*! ./modules/autoplay/autoplay.js */ 1399));
+var _freeMode = _interopRequireDefault(__webpack_require__(/*! ./modules/free-mode/free-mode.js */ 1400));
+var _effectFade = _interopRequireDefault(__webpack_require__(/*! ./modules/effect-fade/effect-fade.js */ 1401));
+var _effectCube = _interopRequireDefault(__webpack_require__(/*! ./modules/effect-cube/effect-cube.js */ 1405));
+var _effectCoverflow = _interopRequireDefault(__webpack_require__(/*! ./modules/effect-coverflow/effect-coverflow.js */ 1406));
+var _effectFlip = _interopRequireDefault(__webpack_require__(/*! ./modules/effect-flip/effect-flip.js */ 1407));
+var _effectCards = _interopRequireDefault(__webpack_require__(/*! ./modules/effect-cards/effect-cards.js */ 1408));
+var _effectCreative = _interopRequireDefault(__webpack_require__(/*! ./modules/effect-creative/effect-creative.js */ 1409));
+var _effectPanorama = _interopRequireDefault(__webpack_require__(/*! ./modules/effect-panorama/effect-panorama.js */ 1410));
+var _effectCarousel = _interopRequireDefault(__webpack_require__(/*! ./modules/effect-carousel/effect-carousel.js */ 1411));
+var _navigation = _interopRequireDefault(__webpack_require__(/*! ./modules/navigation/navigation.js */ 1412));
+var _pagination = _interopRequireDefault(__webpack_require__(/*! ./modules/pagination/pagination.js */ 1413));
+var _thumbs = _interopRequireDefault(__webpack_require__(/*! ./modules/thumbs/thumbs.js */ 1415));
+var _scrollbar = _interopRequireDefault(__webpack_require__(/*! ./modules/scrollbar/scrollbar.js */ 1416));
+var _virtual = _interopRequireDefault(__webpack_require__(/*! ./modules/virtual/virtual.js */ 1417));
+var _controller = _interopRequireDefault(__webpack_require__(/*! ./modules/controller/controller.js */ 1418));
+var _willChange = _interopRequireDefault(__webpack_require__(/*! ./modules/will-change/will-change.js */ 1419));
 var modules = [_autoplay.default, _freeMode.default, _effectFade.default, _effectCube.default, _effectCoverflow.default, _effectFlip.default, _effectCards.default, _effectCreative.default, _effectPanorama.default, _effectCarousel.default, _navigation.default, _pagination.default, _thumbs.default, _scrollbar.default, _willChange.default, _virtual.default, _controller.default];
 _core.default.use(modules);
 
 /***/ }),
 
-/***/ 1336:
+/***/ 1344:
 /*!************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/core.js ***!
   \************************************************************************************/
@@ -4070,23 +4574,23 @@ var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/r
 var _toConsumableArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ 18));
 var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 23));
 var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ 24));
-var _utils = __webpack_require__(/*! ../shared/utils.js */ 1337);
-var _getSupport = __webpack_require__(/*! ../shared/get-support.js */ 1338);
-var _getDevice = __webpack_require__(/*! ../shared/get-device.js */ 1339);
-var _getBrowser = __webpack_require__(/*! ../shared/get-browser.js */ 1340);
-var _moduleExtendParams = _interopRequireDefault(__webpack_require__(/*! ./moduleExtendParams.js */ 1341));
-var _eventsEmitter = _interopRequireDefault(__webpack_require__(/*! ./events-emitter.js */ 1342));
-var _index = _interopRequireDefault(__webpack_require__(/*! ./update/index.js */ 1343));
-var _index2 = _interopRequireDefault(__webpack_require__(/*! ./translate/index.js */ 1353));
-var _index3 = _interopRequireDefault(__webpack_require__(/*! ./transition/index.js */ 1359));
-var _defaults = _interopRequireDefault(__webpack_require__(/*! ./defaults.js */ 1364));
-var _index4 = _interopRequireDefault(__webpack_require__(/*! ./classes/index.js */ 1365));
-var _index5 = _interopRequireDefault(__webpack_require__(/*! ./check-overflow/index.js */ 1368));
-var _index6 = _interopRequireDefault(__webpack_require__(/*! ./slide/index.js */ 1369));
-var _index7 = _interopRequireDefault(__webpack_require__(/*! ./loop/index.js */ 1377));
-var _index8 = _interopRequireDefault(__webpack_require__(/*! ./grab-cursor/index.js */ 1381));
-var _index9 = _interopRequireDefault(__webpack_require__(/*! ./events/index.js */ 1384));
-var _utils2 = __webpack_require__(/*! ./utils/utils.js */ 1333);
+var _utils = __webpack_require__(/*! ../shared/utils.js */ 1345);
+var _getSupport = __webpack_require__(/*! ../shared/get-support.js */ 1346);
+var _getDevice = __webpack_require__(/*! ../shared/get-device.js */ 1347);
+var _getBrowser = __webpack_require__(/*! ../shared/get-browser.js */ 1348);
+var _moduleExtendParams = _interopRequireDefault(__webpack_require__(/*! ./moduleExtendParams.js */ 1349));
+var _eventsEmitter = _interopRequireDefault(__webpack_require__(/*! ./events-emitter.js */ 1350));
+var _index = _interopRequireDefault(__webpack_require__(/*! ./update/index.js */ 1351));
+var _index2 = _interopRequireDefault(__webpack_require__(/*! ./translate/index.js */ 1361));
+var _index3 = _interopRequireDefault(__webpack_require__(/*! ./transition/index.js */ 1367));
+var _defaults = _interopRequireDefault(__webpack_require__(/*! ./defaults.js */ 1372));
+var _index4 = _interopRequireDefault(__webpack_require__(/*! ./classes/index.js */ 1373));
+var _index5 = _interopRequireDefault(__webpack_require__(/*! ./check-overflow/index.js */ 1376));
+var _index6 = _interopRequireDefault(__webpack_require__(/*! ./slide/index.js */ 1377));
+var _index7 = _interopRequireDefault(__webpack_require__(/*! ./loop/index.js */ 1385));
+var _index8 = _interopRequireDefault(__webpack_require__(/*! ./grab-cursor/index.js */ 1389));
+var _index9 = _interopRequireDefault(__webpack_require__(/*! ./events/index.js */ 1392));
+var _utils2 = __webpack_require__(/*! ./utils/utils.js */ 1341);
 var prototypes = {
   eventsEmitter: _eventsEmitter.default,
   update: _index.default,
@@ -4701,7 +5205,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 1337:
+/***/ 1345:
 /*!***************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/shared/utils.js ***!
   \***************************************************************************************/
@@ -4841,7 +5345,7 @@ function animateCSSModeScroll(_ref) {
 
 /***/ }),
 
-/***/ 1338:
+/***/ 1346:
 /*!*********************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/shared/get-support.js ***!
   \*********************************************************************************************/
@@ -4894,7 +5398,7 @@ function getSupport() {
 
 /***/ }),
 
-/***/ 1339:
+/***/ 1347:
 /*!********************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/shared/get-device.js ***!
   \********************************************************************************************/
@@ -4908,7 +5412,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.getDevice = getDevice;
-var _getSupport = __webpack_require__(/*! ./get-support.js */ 1338);
+var _getSupport = __webpack_require__(/*! ./get-support.js */ 1346);
 var deviceCached;
 function calcDevice() {
   var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
@@ -4941,7 +5445,7 @@ function getDevice() {
 
 /***/ }),
 
-/***/ 1340:
+/***/ 1348:
 /*!*********************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/shared/get-browser.js ***!
   \*********************************************************************************************/
@@ -4976,7 +5480,7 @@ function getBrowser() {
 
 /***/ }),
 
-/***/ 1341:
+/***/ 1349:
 /*!**************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/moduleExtendParams.js ***!
   \**************************************************************************************************/
@@ -4992,7 +5496,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = moduleExtendParams;
 var _typeof2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/typeof */ 13));
-var _utils = __webpack_require__(/*! ../shared/utils.js */ 1337);
+var _utils = __webpack_require__(/*! ../shared/utils.js */ 1345);
 function moduleExtendParams(params, allModulesParams) {
   return function extendParams() {
     var obj = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
@@ -5028,7 +5532,7 @@ function moduleExtendParams(params, allModulesParams) {
 
 /***/ }),
 
-/***/ 1342:
+/***/ 1350:
 /*!**********************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/events-emitter.js ***!
   \**********************************************************************************************/
@@ -5147,7 +5651,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 1343:
+/***/ 1351:
 /*!********************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/update/index.js ***!
   \********************************************************************************************/
@@ -5162,15 +5666,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _updateSize = _interopRequireDefault(__webpack_require__(/*! ./updateSize.js */ 1344));
-var _updateSlides = _interopRequireDefault(__webpack_require__(/*! ./updateSlides.js */ 1345));
-var _updateAutoHeight = _interopRequireDefault(__webpack_require__(/*! ./updateAutoHeight.js */ 1346));
-var _updateSlidesOffset = _interopRequireDefault(__webpack_require__(/*! ./updateSlidesOffset.js */ 1347));
-var _updateSlidesProgress = _interopRequireDefault(__webpack_require__(/*! ./updateSlidesProgress.js */ 1348));
-var _updateProgress = _interopRequireDefault(__webpack_require__(/*! ./updateProgress.js */ 1349));
-var _updateSlidesClasses = _interopRequireDefault(__webpack_require__(/*! ./updateSlidesClasses.js */ 1350));
-var _updateActiveIndex = _interopRequireDefault(__webpack_require__(/*! ./updateActiveIndex.js */ 1351));
-var _updateClickedSlide = _interopRequireDefault(__webpack_require__(/*! ./updateClickedSlide.js */ 1352));
+var _updateSize = _interopRequireDefault(__webpack_require__(/*! ./updateSize.js */ 1352));
+var _updateSlides = _interopRequireDefault(__webpack_require__(/*! ./updateSlides.js */ 1353));
+var _updateAutoHeight = _interopRequireDefault(__webpack_require__(/*! ./updateAutoHeight.js */ 1354));
+var _updateSlidesOffset = _interopRequireDefault(__webpack_require__(/*! ./updateSlidesOffset.js */ 1355));
+var _updateSlidesProgress = _interopRequireDefault(__webpack_require__(/*! ./updateSlidesProgress.js */ 1356));
+var _updateProgress = _interopRequireDefault(__webpack_require__(/*! ./updateProgress.js */ 1357));
+var _updateSlidesClasses = _interopRequireDefault(__webpack_require__(/*! ./updateSlidesClasses.js */ 1358));
+var _updateActiveIndex = _interopRequireDefault(__webpack_require__(/*! ./updateActiveIndex.js */ 1359));
+var _updateClickedSlide = _interopRequireDefault(__webpack_require__(/*! ./updateClickedSlide.js */ 1360));
 var _default = {
   updateSize: _updateSize.default,
   updateSlides: _updateSlides.default,
@@ -5186,7 +5690,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 1344:
+/***/ 1352:
 /*!*************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/update/updateSize.js ***!
   \*************************************************************************************************/
@@ -5229,7 +5733,7 @@ function updateSize() {
 
 /***/ }),
 
-/***/ 1345:
+/***/ 1353:
 /*!***************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/update/updateSlides.js ***!
   \***************************************************************************************************/
@@ -5248,7 +5752,7 @@ var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 58));
 var _toConsumableArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ 18));
-var _utils = __webpack_require__(/*! ../../shared/utils.js */ 1337);
+var _utils = __webpack_require__(/*! ../../shared/utils.js */ 1345);
 function updateSlides() {
   var swiper = this;
   function getDirectionLabel(property) {
@@ -5515,7 +6019,7 @@ function updateSlides() {
 
 /***/ }),
 
-/***/ 1346:
+/***/ 1354:
 /*!*******************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/update/updateAutoHeight.js ***!
   \*******************************************************************************************************/
@@ -5635,7 +6139,7 @@ function _updateAutoHeight() {
 
 /***/ }),
 
-/***/ 1347:
+/***/ 1355:
 /*!*********************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/update/updateSlidesOffset.js ***!
   \*********************************************************************************************************/
@@ -5680,7 +6184,7 @@ function _updateSlidesOffset() {
 
 /***/ }),
 
-/***/ 1348:
+/***/ 1356:
 /*!***********************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/update/updateSlidesProgress.js ***!
   \***********************************************************************************************************/
@@ -5734,7 +6238,7 @@ function updateSlidesProgress() {
 
 /***/ }),
 
-/***/ 1349:
+/***/ 1357:
 /*!*****************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/update/updateProgress.js ***!
   \*****************************************************************************************************/
@@ -5791,7 +6295,7 @@ function updateProgress(translate) {
 
 /***/ }),
 
-/***/ 1350:
+/***/ 1358:
 /*!**********************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/update/updateSlidesClasses.js ***!
   \**********************************************************************************************************/
@@ -5908,7 +6412,7 @@ function updateSlidesClasses() {
 
 /***/ }),
 
-/***/ 1351:
+/***/ 1359:
 /*!********************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/update/updateActiveIndex.js ***!
   \********************************************************************************************************/
@@ -6012,7 +6516,7 @@ function updateActiveIndex(newActiveIndex) {
 
 /***/ }),
 
-/***/ 1352:
+/***/ 1360:
 /*!*********************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/update/updateClickedSlide.js ***!
   \*********************************************************************************************************/
@@ -6060,7 +6564,7 @@ function updateClickedSlide(e) {
 
 /***/ }),
 
-/***/ 1353:
+/***/ 1361:
 /*!***********************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/translate/index.js ***!
   \***********************************************************************************************/
@@ -6075,11 +6579,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _getTranslate = _interopRequireDefault(__webpack_require__(/*! ./getTranslate.js */ 1354));
-var _setTranslate = _interopRequireDefault(__webpack_require__(/*! ./setTranslate.js */ 1355));
-var _minTranslate = _interopRequireDefault(__webpack_require__(/*! ./minTranslate.js */ 1356));
-var _maxTranslate = _interopRequireDefault(__webpack_require__(/*! ./maxTranslate.js */ 1357));
-var _translateTo = _interopRequireDefault(__webpack_require__(/*! ./translateTo.js */ 1358));
+var _getTranslate = _interopRequireDefault(__webpack_require__(/*! ./getTranslate.js */ 1362));
+var _setTranslate = _interopRequireDefault(__webpack_require__(/*! ./setTranslate.js */ 1363));
+var _minTranslate = _interopRequireDefault(__webpack_require__(/*! ./minTranslate.js */ 1364));
+var _maxTranslate = _interopRequireDefault(__webpack_require__(/*! ./maxTranslate.js */ 1365));
+var _translateTo = _interopRequireDefault(__webpack_require__(/*! ./translateTo.js */ 1366));
 var _default = {
   getTranslate: _getTranslate.default,
   setTranslate: _setTranslate.default,
@@ -6091,7 +6595,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 1354:
+/***/ 1362:
 /*!******************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/translate/getTranslate.js ***!
   \******************************************************************************************************/
@@ -6105,7 +6609,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = getSwiperTranslate;
-var _utils = __webpack_require__(/*! ../../shared/utils.js */ 1337);
+var _utils = __webpack_require__(/*! ../../shared/utils.js */ 1345);
 function getSwiperTranslate() {
   var axis = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.isHorizontal() ? 'x' : 'y';
   var swiper = this;
@@ -6126,7 +6630,7 @@ function getSwiperTranslate() {
 
 /***/ }),
 
-/***/ 1355:
+/***/ 1363:
 /*!******************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/translate/setTranslate.js ***!
   \******************************************************************************************************/
@@ -6186,7 +6690,7 @@ function setTranslate(translate, byController) {
 
 /***/ }),
 
-/***/ 1356:
+/***/ 1364:
 /*!******************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/translate/minTranslate.js ***!
   \******************************************************************************************************/
@@ -6206,7 +6710,7 @@ function minTranslate() {
 
 /***/ }),
 
-/***/ 1357:
+/***/ 1365:
 /*!******************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/translate/maxTranslate.js ***!
   \******************************************************************************************************/
@@ -6226,7 +6730,7 @@ function maxTranslate() {
 
 /***/ }),
 
-/***/ 1358:
+/***/ 1366:
 /*!*****************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/translate/translateTo.js ***!
   \*****************************************************************************************************/
@@ -6242,7 +6746,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = translateTo;
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
-var _utils = __webpack_require__(/*! ../../shared/utils.js */ 1337);
+var _utils = __webpack_require__(/*! ../../shared/utils.js */ 1345);
 function translateTo() {
   var translate = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
   var speed = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : this.params.speed;
@@ -6318,7 +6822,7 @@ function translateTo() {
 
 /***/ }),
 
-/***/ 1359:
+/***/ 1367:
 /*!************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/transition/index.js ***!
   \************************************************************************************************/
@@ -6333,9 +6837,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _setTransition = _interopRequireDefault(__webpack_require__(/*! ./setTransition.js */ 1360));
-var _transitionStart = _interopRequireDefault(__webpack_require__(/*! ./transitionStart.js */ 1361));
-var _transitionEnd = _interopRequireDefault(__webpack_require__(/*! ./transitionEnd.js */ 1363));
+var _setTransition = _interopRequireDefault(__webpack_require__(/*! ./setTransition.js */ 1368));
+var _transitionStart = _interopRequireDefault(__webpack_require__(/*! ./transitionStart.js */ 1369));
+var _transitionEnd = _interopRequireDefault(__webpack_require__(/*! ./transitionEnd.js */ 1371));
 var _default = {
   setTransition: _setTransition.default,
   transitionStart: _transitionStart.default,
@@ -6345,7 +6849,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 1360:
+/***/ 1368:
 /*!********************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/transition/setTransition.js ***!
   \********************************************************************************************************/
@@ -6370,7 +6874,7 @@ function setTransition(duration, byController) {
 
 /***/ }),
 
-/***/ 1361:
+/***/ 1369:
 /*!**********************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/transition/transitionStart.js ***!
   \**********************************************************************************************************/
@@ -6385,7 +6889,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = transitionStart;
-var _transitionEmit = _interopRequireDefault(__webpack_require__(/*! ./transitionEmit.js */ 1362));
+var _transitionEmit = _interopRequireDefault(__webpack_require__(/*! ./transitionEmit.js */ 1370));
 function transitionStart() {
   var runCallbacks = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
   var direction = arguments.length > 1 ? arguments[1] : undefined;
@@ -6405,7 +6909,7 @@ function transitionStart() {
 
 /***/ }),
 
-/***/ 1362:
+/***/ 1370:
 /*!*********************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/transition/transitionEmit.js ***!
   \*********************************************************************************************************/
@@ -6447,7 +6951,7 @@ function transitionEmit(_ref) {
 
 /***/ }),
 
-/***/ 1363:
+/***/ 1371:
 /*!********************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/transition/transitionEnd.js ***!
   \********************************************************************************************************/
@@ -6462,7 +6966,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = transitionEnd;
-var _transitionEmit = _interopRequireDefault(__webpack_require__(/*! ./transitionEmit.js */ 1362));
+var _transitionEmit = _interopRequireDefault(__webpack_require__(/*! ./transitionEmit.js */ 1370));
 function transitionEnd() {
   var runCallbacks = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
   var direction = arguments.length > 1 ? arguments[1] : undefined;
@@ -6481,7 +6985,7 @@ function transitionEnd() {
 
 /***/ }),
 
-/***/ 1364:
+/***/ 1372:
 /*!****************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/defaults.js ***!
   \****************************************************************************************/
@@ -6625,7 +7129,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 1365:
+/***/ 1373:
 /*!*********************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/classes/index.js ***!
   \*********************************************************************************************/
@@ -6640,8 +7144,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _addClasses = _interopRequireDefault(__webpack_require__(/*! ./addClasses.js */ 1366));
-var _removeClasses = _interopRequireDefault(__webpack_require__(/*! ./removeClasses.js */ 1367));
+var _addClasses = _interopRequireDefault(__webpack_require__(/*! ./addClasses.js */ 1374));
+var _removeClasses = _interopRequireDefault(__webpack_require__(/*! ./removeClasses.js */ 1375));
 var _default = {
   addClasses: _addClasses.default,
   removeClasses: _removeClasses.default
@@ -6650,7 +7154,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 1366:
+/***/ 1374:
 /*!**************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/classes/addClasses.js ***!
   \**************************************************************************************************/
@@ -6719,7 +7223,7 @@ function addClasses() {
 
 /***/ }),
 
-/***/ 1367:
+/***/ 1375:
 /*!*****************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/classes/removeClasses.js ***!
   \*****************************************************************************************************/
@@ -6743,7 +7247,7 @@ function removeClasses() {
 
 /***/ }),
 
-/***/ 1368:
+/***/ 1376:
 /*!****************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/check-overflow/index.js ***!
   \****************************************************************************************************/
@@ -6789,7 +7293,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 1369:
+/***/ 1377:
 /*!*******************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/slide/index.js ***!
   \*******************************************************************************************/
@@ -6804,13 +7308,13 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _slideTo = _interopRequireDefault(__webpack_require__(/*! ./slideTo.js */ 1370));
-var _slideToLoop = _interopRequireDefault(__webpack_require__(/*! ./slideToLoop.js */ 1371));
-var _slideNext = _interopRequireDefault(__webpack_require__(/*! ./slideNext.js */ 1372));
-var _slidePrev = _interopRequireDefault(__webpack_require__(/*! ./slidePrev.js */ 1373));
-var _slideReset = _interopRequireDefault(__webpack_require__(/*! ./slideReset.js */ 1374));
-var _slideToClosest = _interopRequireDefault(__webpack_require__(/*! ./slideToClosest.js */ 1375));
-var _slideToClickedSlide = _interopRequireDefault(__webpack_require__(/*! ./slideToClickedSlide.js */ 1376));
+var _slideTo = _interopRequireDefault(__webpack_require__(/*! ./slideTo.js */ 1378));
+var _slideToLoop = _interopRequireDefault(__webpack_require__(/*! ./slideToLoop.js */ 1379));
+var _slideNext = _interopRequireDefault(__webpack_require__(/*! ./slideNext.js */ 1380));
+var _slidePrev = _interopRequireDefault(__webpack_require__(/*! ./slidePrev.js */ 1381));
+var _slideReset = _interopRequireDefault(__webpack_require__(/*! ./slideReset.js */ 1382));
+var _slideToClosest = _interopRequireDefault(__webpack_require__(/*! ./slideToClosest.js */ 1383));
+var _slideToClickedSlide = _interopRequireDefault(__webpack_require__(/*! ./slideToClickedSlide.js */ 1384));
 var _default = {
   slideTo: _slideTo.default,
   slideToLoop: _slideToLoop.default,
@@ -6824,7 +7328,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 1370:
+/***/ 1378:
 /*!*********************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/slide/slideTo.js ***!
   \*********************************************************************************************/
@@ -6841,7 +7345,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = slideTo;
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
 var _typeof2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/typeof */ 13));
-var _utils = __webpack_require__(/*! ../../shared/utils.js */ 1337);
+var _utils = __webpack_require__(/*! ../../shared/utils.js */ 1345);
 function slideTo() {
   var index = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
   var speed = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : this.params.speed;
@@ -7002,7 +7506,7 @@ function slideTo() {
 
 /***/ }),
 
-/***/ 1371:
+/***/ 1379:
 /*!*************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/slide/slideToLoop.js ***!
   \*************************************************************************************************/
@@ -7031,7 +7535,7 @@ function slideToLoop() {
 
 /***/ }),
 
-/***/ 1372:
+/***/ 1380:
 /*!***********************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/slide/slideNext.js ***!
   \***********************************************************************************************/
@@ -7074,7 +7578,7 @@ function slideNext() {
 
 /***/ }),
 
-/***/ 1373:
+/***/ 1381:
 /*!***********************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/slide/slidePrev.js ***!
   \***********************************************************************************************/
@@ -7145,7 +7649,7 @@ function slidePrev() {
 
 /***/ }),
 
-/***/ 1374:
+/***/ 1382:
 /*!************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/slide/slideReset.js ***!
   \************************************************************************************************/
@@ -7169,7 +7673,7 @@ function slideReset() {
 
 /***/ }),
 
-/***/ 1375:
+/***/ 1383:
 /*!****************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/slide/slideToClosest.js ***!
   \****************************************************************************************************/
@@ -7214,7 +7718,7 @@ function slideToClosest() {
 
 /***/ }),
 
-/***/ 1376:
+/***/ 1384:
 /*!*********************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/slide/slideToClickedSlide.js ***!
   \*********************************************************************************************************/
@@ -7228,7 +7732,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = slideToClickedSlide;
-var _utils = __webpack_require__(/*! ../../shared/utils.js */ 1337);
+var _utils = __webpack_require__(/*! ../../shared/utils.js */ 1345);
 function slideToClickedSlide() {
   var swiper = this;
   var params = swiper.params,
@@ -7266,7 +7770,7 @@ function slideToClickedSlide() {
 
 /***/ }),
 
-/***/ 1377:
+/***/ 1385:
 /*!******************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/loop/index.js ***!
   \******************************************************************************************/
@@ -7281,9 +7785,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _loopCreate = _interopRequireDefault(__webpack_require__(/*! ./loopCreate.js */ 1378));
-var _loopFix = _interopRequireDefault(__webpack_require__(/*! ./loopFix.js */ 1379));
-var _loopDestroy = _interopRequireDefault(__webpack_require__(/*! ./loopDestroy.js */ 1380));
+var _loopCreate = _interopRequireDefault(__webpack_require__(/*! ./loopCreate.js */ 1386));
+var _loopFix = _interopRequireDefault(__webpack_require__(/*! ./loopFix.js */ 1387));
+var _loopDestroy = _interopRequireDefault(__webpack_require__(/*! ./loopDestroy.js */ 1388));
 var _default = {
   loopCreate: _loopCreate.default,
   loopFix: _loopFix.default,
@@ -7293,7 +7797,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 1378:
+/***/ 1386:
 /*!***********************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/loop/loopCreate.js ***!
   \***********************************************************************************************/
@@ -7355,7 +7859,7 @@ function loopCreate() {
 
 /***/ }),
 
-/***/ 1379:
+/***/ 1387:
 /*!********************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/loop/loopFix.js ***!
   \********************************************************************************************/
@@ -7406,7 +7910,7 @@ function loopFix() {
 
 /***/ }),
 
-/***/ 1380:
+/***/ 1388:
 /*!************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/loop/loopDestroy.js ***!
   \************************************************************************************************/
@@ -7429,7 +7933,7 @@ function loopDestroy() {
 
 /***/ }),
 
-/***/ 1381:
+/***/ 1389:
 /*!*************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/grab-cursor/index.js ***!
   \*************************************************************************************************/
@@ -7444,8 +7948,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _setGrabCursor = _interopRequireDefault(__webpack_require__(/*! ./setGrabCursor.js */ 1382));
-var _unsetGrabCursor = _interopRequireDefault(__webpack_require__(/*! ./unsetGrabCursor.js */ 1383));
+var _setGrabCursor = _interopRequireDefault(__webpack_require__(/*! ./setGrabCursor.js */ 1390));
+var _unsetGrabCursor = _interopRequireDefault(__webpack_require__(/*! ./unsetGrabCursor.js */ 1391));
 var _default = {
   setGrabCursor: _setGrabCursor.default,
   unsetGrabCursor: _unsetGrabCursor.default
@@ -7454,7 +7958,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 1382:
+/***/ 1390:
 /*!*********************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/grab-cursor/setGrabCursor.js ***!
   \*********************************************************************************************************/
@@ -7482,7 +7986,7 @@ function setGrabCursor(moving) {
 
 /***/ }),
 
-/***/ 1383:
+/***/ 1391:
 /*!***********************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/grab-cursor/unsetGrabCursor.js ***!
   \***********************************************************************************************************/
@@ -7508,7 +8012,7 @@ function unsetGrabCursor() {
 
 /***/ }),
 
-/***/ 1384:
+/***/ 1392:
 /*!********************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/events/index.js ***!
   \********************************************************************************************/
@@ -7523,12 +8027,12 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _onTouchStart = _interopRequireDefault(__webpack_require__(/*! ./onTouchStart.js */ 1385));
-var _onTouchMove = _interopRequireDefault(__webpack_require__(/*! ./onTouchMove.js */ 1386));
-var _onTouchEnd = _interopRequireDefault(__webpack_require__(/*! ./onTouchEnd.js */ 1387));
-var _onResize = _interopRequireDefault(__webpack_require__(/*! ./onResize.js */ 1388));
-var _onClick = _interopRequireDefault(__webpack_require__(/*! ./onClick.js */ 1389));
-var _onScroll = _interopRequireDefault(__webpack_require__(/*! ./onScroll.js */ 1390));
+var _onTouchStart = _interopRequireDefault(__webpack_require__(/*! ./onTouchStart.js */ 1393));
+var _onTouchMove = _interopRequireDefault(__webpack_require__(/*! ./onTouchMove.js */ 1394));
+var _onTouchEnd = _interopRequireDefault(__webpack_require__(/*! ./onTouchEnd.js */ 1395));
+var _onResize = _interopRequireDefault(__webpack_require__(/*! ./onResize.js */ 1396));
+var _onClick = _interopRequireDefault(__webpack_require__(/*! ./onClick.js */ 1397));
+var _onScroll = _interopRequireDefault(__webpack_require__(/*! ./onScroll.js */ 1398));
 var dummyEventAttached = false;
 function dummyEventListener() {}
 var events = function events(swiper, method) {
@@ -7587,7 +8091,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 1385:
+/***/ 1393:
 /*!***************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/events/onTouchStart.js ***!
   \***************************************************************************************************/
@@ -7601,7 +8105,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = onTouchStart;
-var _utils = __webpack_require__(/*! ../../shared/utils.js */ 1337);
+var _utils = __webpack_require__(/*! ../../shared/utils.js */ 1345);
 function onTouchStart(event) {
   var swiper = this;
   var data = swiper.touchEventsData;
@@ -7668,7 +8172,7 @@ function onTouchStart(event) {
 
 /***/ }),
 
-/***/ 1386:
+/***/ 1394:
 /*!**************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/events/onTouchMove.js ***!
   \**************************************************************************************************/
@@ -7682,7 +8186,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = onTouchMove;
-var _utils = __webpack_require__(/*! ../../shared/utils.js */ 1337);
+var _utils = __webpack_require__(/*! ../../shared/utils.js */ 1345);
 function onTouchMove(event) {
   var swiper = this;
   var data = swiper.touchEventsData;
@@ -7859,7 +8363,7 @@ function onTouchMove(event) {
 
 /***/ }),
 
-/***/ 1387:
+/***/ 1395:
 /*!*************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/events/onTouchEnd.js ***!
   \*************************************************************************************************/
@@ -7873,7 +8377,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = onTouchEnd;
-var _utils = __webpack_require__(/*! ../../shared/utils.js */ 1337);
+var _utils = __webpack_require__(/*! ../../shared/utils.js */ 1345);
 function onTouchEnd(event) {
   var swiper = this;
   var data = swiper.touchEventsData;
@@ -7989,7 +8493,7 @@ function onTouchEnd(event) {
 
 /***/ }),
 
-/***/ 1388:
+/***/ 1396:
 /*!***********************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/events/onResize.js ***!
   \***********************************************************************************************/
@@ -8036,7 +8540,7 @@ function onResize() {
 
 /***/ }),
 
-/***/ 1389:
+/***/ 1397:
 /*!**********************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/events/onClick.js ***!
   \**********************************************************************************************/
@@ -8064,7 +8568,7 @@ function onClick(e) {
 
 /***/ }),
 
-/***/ 1390:
+/***/ 1398:
 /*!***********************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/events/onScroll.js ***!
   \***********************************************************************************************/
@@ -8109,7 +8613,7 @@ function onScroll() {
 
 /***/ }),
 
-/***/ 1391:
+/***/ 1399:
 /*!****************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/modules/autoplay/autoplay.js ***!
   \****************************************************************************************************/
@@ -8123,7 +8627,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = Autoplay;
-var _utils = __webpack_require__(/*! ../../shared/utils.js */ 1337);
+var _utils = __webpack_require__(/*! ../../shared/utils.js */ 1345);
 function Autoplay(_ref) {
   var swiper = _ref.swiper,
     extendParams = _ref.extendParams,
@@ -8313,7 +8817,29 @@ function Autoplay(_ref) {
 
 /***/ }),
 
-/***/ 1392:
+/***/ 14:
+/*!************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/toPrimitive.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _typeof = __webpack_require__(/*! ./typeof.js */ 13)["default"];
+function toPrimitive(t, r) {
+  if ("object" != _typeof(t) || !t) return t;
+  var e = t[Symbol.toPrimitive];
+  if (void 0 !== e) {
+    var i = e.call(t, r || "default");
+    if ("object" != _typeof(i)) return i;
+    throw new TypeError("@@toPrimitive must return a primitive value.");
+  }
+  return ("string" === r ? String : Number)(t);
+}
+module.exports = toPrimitive, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 1400:
 /*!******************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/modules/free-mode/free-mode.js ***!
   \******************************************************************************************************/
@@ -8327,7 +8853,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = freeMode;
-var _utils = __webpack_require__(/*! ../../shared/utils.js */ 1337);
+var _utils = __webpack_require__(/*! ../../shared/utils.js */ 1345);
 function freeMode(_ref) {
   var swiper = _ref.swiper,
     extendParams = _ref.extendParams,
@@ -8535,7 +9061,7 @@ function freeMode(_ref) {
 
 /***/ }),
 
-/***/ 1393:
+/***/ 1401:
 /*!**********************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/modules/effect-fade/effect-fade.js ***!
   \**********************************************************************************************************/
@@ -8550,9 +9076,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = EffectFade;
-var _effectInit = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-init.js */ 1394));
-var _effectTarget = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-target.js */ 1395));
-var _effectVirtualTransitionEnd = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-virtual-transition-end.js */ 1396));
+var _effectInit = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-init.js */ 1402));
+var _effectTarget = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-target.js */ 1403));
+var _effectVirtualTransitionEnd = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-virtual-transition-end.js */ 1404));
 function EffectFade(_ref) {
   var swiper = _ref.swiper,
     extendParams = _ref.extendParams,
@@ -8621,7 +9147,7 @@ function EffectFade(_ref) {
 
 /***/ }),
 
-/***/ 1394:
+/***/ 1402:
 /*!*********************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/shared/effect-init.js ***!
   \*********************************************************************************************/
@@ -8665,7 +9191,7 @@ function effectInit(params) {
 
 /***/ }),
 
-/***/ 1395:
+/***/ 1403:
 /*!***********************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/shared/effect-target.js ***!
   \***********************************************************************************************/
@@ -8691,7 +9217,7 @@ function effectTarget(effectParams, $slideEl) {
 
 /***/ }),
 
-/***/ 1396:
+/***/ 1404:
 /*!***************************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/shared/effect-virtual-transition-end.js ***!
   \***************************************************************************************************************/
@@ -8741,7 +9267,7 @@ function effectVirtualTransitionEnd(_ref) {
 
 /***/ }),
 
-/***/ 1397:
+/***/ 1405:
 /*!**********************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/modules/effect-cube/effect-cube.js ***!
   \**********************************************************************************************************/
@@ -8756,7 +9282,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = EffectCube;
-var _effectInit = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-init.js */ 1394));
+var _effectInit = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-init.js */ 1402));
 function EffectCube(_ref) {
   var swiper = _ref.swiper,
     extendParams = _ref.extendParams,
@@ -8923,7 +9449,7 @@ function EffectCube(_ref) {
 
 /***/ }),
 
-/***/ 1398:
+/***/ 1406:
 /*!********************************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/modules/effect-coverflow/effect-coverflow.js ***!
   \********************************************************************************************************************/
@@ -8938,8 +9464,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = EffectCoverflow;
-var _effectInit = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-init.js */ 1394));
-var _effectTarget = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-target.js */ 1395));
+var _effectInit = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-init.js */ 1402));
+var _effectTarget = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-target.js */ 1403));
 function EffectCoverflow(_ref) {
   var swiper = _ref.swiper,
     extendParams = _ref.extendParams,
@@ -9046,7 +9572,7 @@ function EffectCoverflow(_ref) {
 
 /***/ }),
 
-/***/ 1399:
+/***/ 1407:
 /*!**********************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/modules/effect-flip/effect-flip.js ***!
   \**********************************************************************************************************/
@@ -9061,9 +9587,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = EffectFlip;
-var _effectInit = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-init.js */ 1394));
-var _effectTarget = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-target.js */ 1395));
-var _effectVirtualTransitionEnd = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-virtual-transition-end.js */ 1396));
+var _effectInit = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-init.js */ 1402));
+var _effectTarget = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-target.js */ 1403));
+var _effectVirtualTransitionEnd = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-virtual-transition-end.js */ 1404));
 function EffectFlip(_ref) {
   var swiper = _ref.swiper,
     extendParams = _ref.extendParams,
@@ -9163,29 +9689,7 @@ function EffectFlip(_ref) {
 
 /***/ }),
 
-/***/ 14:
-/*!************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/toPrimitive.js ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var _typeof = __webpack_require__(/*! ./typeof.js */ 13)["default"];
-function toPrimitive(t, r) {
-  if ("object" != _typeof(t) || !t) return t;
-  var e = t[Symbol.toPrimitive];
-  if (void 0 !== e) {
-    var i = e.call(t, r || "default");
-    if ("object" != _typeof(i)) return i;
-    throw new TypeError("@@toPrimitive must return a primitive value.");
-  }
-  return ("string" === r ? String : Number)(t);
-}
-module.exports = toPrimitive, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 1400:
+/***/ 1408:
 /*!************************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/modules/effect-cards/effect-cards.js ***!
   \************************************************************************************************************/
@@ -9200,9 +9704,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = EffectCards;
-var _effectInit = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-init.js */ 1394));
-var _effectTarget = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-target.js */ 1395));
-var _effectVirtualTransitionEnd = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-virtual-transition-end.js */ 1396));
+var _effectInit = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-init.js */ 1402));
+var _effectTarget = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-target.js */ 1403));
+var _effectVirtualTransitionEnd = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-virtual-transition-end.js */ 1404));
 function EffectCards(_ref) {
   var swiper = _ref.swiper,
     extendParams = _ref.extendParams,
@@ -9309,7 +9813,7 @@ function EffectCards(_ref) {
 
 /***/ }),
 
-/***/ 1401:
+/***/ 1409:
 /*!******************************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/modules/effect-creative/effect-creative.js ***!
   \******************************************************************************************************************/
@@ -9324,9 +9828,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = EffectCreative;
-var _effectInit = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-init.js */ 1394));
-var _effectTarget = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-target.js */ 1395));
-var _effectVirtualTransitionEnd = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-virtual-transition-end.js */ 1396));
+var _effectInit = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-init.js */ 1402));
+var _effectTarget = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-target.js */ 1403));
+var _effectVirtualTransitionEnd = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-virtual-transition-end.js */ 1404));
 function EffectCreative(_ref) {
   var swiper = _ref.swiper,
     extendParams = _ref.extendParams,
@@ -9481,7 +9985,7 @@ function EffectCreative(_ref) {
 
 /***/ }),
 
-/***/ 1402:
+/***/ 1410:
 /*!******************************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/modules/effect-panorama/effect-panorama.js ***!
   \******************************************************************************************************************/
@@ -9557,7 +10061,7 @@ function Panorama(_ref) {
 
 /***/ }),
 
-/***/ 1403:
+/***/ 1411:
 /*!******************************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/modules/effect-carousel/effect-carousel.js ***!
   \******************************************************************************************************************/
@@ -9572,8 +10076,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = EffectCarousel;
-var _effectInit = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-init.js */ 1394));
-var _effectTarget = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-target.js */ 1395));
+var _effectInit = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-init.js */ 1402));
+var _effectTarget = _interopRequireDefault(__webpack_require__(/*! ../../shared/effect-target.js */ 1403));
 function EffectCarousel(_ref) {
   var swiper = _ref.swiper,
     extendParams = _ref.extendParams,
@@ -9639,7 +10143,7 @@ function EffectCarousel(_ref) {
 
 /***/ }),
 
-/***/ 1404:
+/***/ 1412:
 /*!********************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/modules/navigation/navigation.js ***!
   \********************************************************************************************************/
@@ -9825,7 +10329,7 @@ function Navigation(_ref) {
 
 /***/ }),
 
-/***/ 1405:
+/***/ 1413:
 /*!********************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/modules/pagination/pagination.js ***!
   \********************************************************************************************************/
@@ -9842,7 +10346,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = Pagination;
 var _toConsumableArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ 18));
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
-var _classesToSelector = _interopRequireDefault(__webpack_require__(/*! ../../shared/classes-to-selector.js */ 1406));
+var _classesToSelector = _interopRequireDefault(__webpack_require__(/*! ../../shared/classes-to-selector.js */ 1414));
 function Pagination(_ref) {
   var swiper = _ref.swiper,
     extendParams = _ref.extendParams,
@@ -10285,7 +10789,7 @@ function Pagination(_ref) {
 
 /***/ }),
 
-/***/ 1406:
+/***/ 1414:
 /*!*****************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/shared/classes-to-selector.js ***!
   \*****************************************************************************************************/
@@ -10307,7 +10811,7 @@ function classesToSelector() {
 
 /***/ }),
 
-/***/ 1407:
+/***/ 1415:
 /*!************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/modules/thumbs/thumbs.js ***!
   \************************************************************************************************/
@@ -10321,7 +10825,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = Thumb;
-var _utils = __webpack_require__(/*! ../../shared/utils.js */ 1337);
+var _utils = __webpack_require__(/*! ../../shared/utils.js */ 1345);
 // import $ from '../../shared/dom.js';
 
 function Thumb(_ref) {
@@ -10505,7 +11009,7 @@ function Thumb(_ref) {
 
 /***/ }),
 
-/***/ 1408:
+/***/ 1416:
 /*!******************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/modules/scrollbar/scrollbar.js ***!
   \******************************************************************************************************/
@@ -10522,7 +11026,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = Scrollbar;
 var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 56));
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 58));
-var _utils = __webpack_require__(/*! ../../shared/utils.js */ 1337);
+var _utils = __webpack_require__(/*! ../../shared/utils.js */ 1345);
 function Scrollbar(_ref) {
   var swiper = _ref.swiper,
     extendParams = _ref.extendParams,
@@ -10868,7 +11372,7 @@ function Scrollbar(_ref) {
 
 /***/ }),
 
-/***/ 1409:
+/***/ 1417:
 /*!**************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/modules/virtual/virtual.js ***!
   \**************************************************************************************************/
@@ -11210,7 +11714,7 @@ function Virtual(_ref) {
 
 /***/ }),
 
-/***/ 1410:
+/***/ 1418:
 /*!********************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/modules/controller/controller.js ***!
   \********************************************************************************************************/
@@ -11224,7 +11728,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = Controller;
-var _utils = __webpack_require__(/*! ../../shared/utils.js */ 1337);
+var _utils = __webpack_require__(/*! ../../shared/utils.js */ 1345);
 function Controller(_ref) {
   var swiper = _ref.swiper,
     extendParams = _ref.extendParams,
@@ -11389,7 +11893,7 @@ function Controller(_ref) {
 
 /***/ }),
 
-/***/ 1411:
+/***/ 1419:
 /*!**********************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/modules/will-change/will-change.js ***!
   \**********************************************************************************************************/
@@ -11424,7 +11928,7 @@ function WillChange(_ref) {
 
 /***/ }),
 
-/***/ 1412:
+/***/ 1420:
 /*!******************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/vue2/utils.js ***!
   \******************************************************************************************/
@@ -11488,7 +11992,7 @@ function uniqueClasses() {
 
 /***/ }),
 
-/***/ 1413:
+/***/ 1421:
 /*!************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/vue2/params-list.js ***!
   \************************************************************************************************/
@@ -11510,7 +12014,7 @@ exports.paramsList = paramsList;
 
 /***/ }),
 
-/***/ 1414:
+/***/ 1422:
 /*!************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/vue2/init-swiper.js ***!
   \************************************************************************************************/
@@ -11526,8 +12030,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.initSwiper = initSwiper;
 exports.mountSwiper = mountSwiper;
-var _index = _interopRequireDefault(__webpack_require__(/*! ../../index.js */ 1335));
-var _utils = __webpack_require__(/*! ./utils.js */ 1412);
+var _index = _interopRequireDefault(__webpack_require__(/*! ../../index.js */ 1343));
+var _utils = __webpack_require__(/*! ./utils.js */ 1420);
 function initSwiper(swiperParams, native) {
   return new _index.default(swiperParams, native);
 }
@@ -11557,7 +12061,7 @@ function mountSwiper(_ref, swiperParams) {
 
 /***/ }),
 
-/***/ 1415:
+/***/ 1423:
 /*!*****************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/vue2/loop.js ***!
   \*****************************************************************************************/
@@ -11574,7 +12078,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.calcLoopedSlides = calcLoopedSlides;
 exports.renderLoop = renderLoop;
 var _toConsumableArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ 18));
-var _index = _interopRequireDefault(__webpack_require__(/*! ../../index.js */ 1335));
+var _index = _interopRequireDefault(__webpack_require__(/*! ../../index.js */ 1343));
 function calcLoopedSlides(slides, swiperParams) {
   var slidesPerViewParams = swiperParams.slidesPerView;
   if (swiperParams.breakpoints) {
@@ -11635,7 +12139,7 @@ function renderLoop(native, swiperParams, data) {
 
 /***/ }),
 
-/***/ 1416:
+/***/ 1424:
 /*!*******************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/vue2/get-changed-params.js ***!
   \*******************************************************************************************************/
@@ -11649,8 +12153,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.getChangedParams = getChangedParams;
-var _paramsList = __webpack_require__(/*! ./params-list.js */ 1413);
-var _utils = __webpack_require__(/*! ./utils.js */ 1412);
+var _paramsList = __webpack_require__(/*! ./params-list.js */ 1421);
+var _utils = __webpack_require__(/*! ./utils.js */ 1420);
 function getChangedParams(swiperParams, oldParams, children, oldChildren) {
   var keys = [];
   if (!oldParams) return keys;
@@ -11701,7 +12205,7 @@ function getChangedParams(swiperParams, oldParams, children, oldChildren) {
 
 /***/ }),
 
-/***/ 1417:
+/***/ 1425:
 /*!**************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/vue2/update-swiper.js ***!
   \**************************************************************************************************/
@@ -11718,7 +12222,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.updateSwiper = updateSwiper;
 var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 56));
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 58));
-var _utils = __webpack_require__(/*! ./utils.js */ 1412);
+var _utils = __webpack_require__(/*! ./utils.js */ 1420);
 function updateSwiper(_x) {
   return _updateSwiper.apply(this, arguments);
 }
@@ -11832,7 +12336,7 @@ function _updateSwiper() {
 
 /***/ }),
 
-/***/ 1418:
+/***/ 1426:
 /*!********************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/vue2/virtual.js ***!
   \********************************************************************************************/
@@ -11883,7 +12387,7 @@ function renderVirtual(swiperRef, slides, virtualData) {
 
 /***/ }),
 
-/***/ 1419:
+/***/ 1427:
 /*!***********************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/zebra-swiper/libs/mixins/relation.js ***!
   \***********************************************************************************************/
@@ -11951,7 +12455,7 @@ function ParentMixin(parent) {
 
 /***/ }),
 
-/***/ 1459:
+/***/ 1467:
 /*!**********************************************************************************************************************!*\
   !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/uni-transition/components/uni-transition/createAnimation.js ***!
   \**********************************************************************************************************************/
@@ -12083,510 +12587,6 @@ function createAnimation(option, _this) {
   return new MPAnimation(option, _this);
 }
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-
-/***/ 1465:
-/*!**************************************************************************************************************!*\
-  !*** G:/wwwroot/fastadmin插件/商协会文档/-/商协会-高级版/uni_modules/uni-icons/components/uni-icons/uniicons_file_vue.js ***!
-  \**************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.fontData = void 0;
-var fontData = [{
-  "font_class": "arrow-down",
-  "unicode": "\uE6BE"
-}, {
-  "font_class": "arrow-left",
-  "unicode": "\uE6BC"
-}, {
-  "font_class": "arrow-right",
-  "unicode": "\uE6BB"
-}, {
-  "font_class": "arrow-up",
-  "unicode": "\uE6BD"
-}, {
-  "font_class": "auth",
-  "unicode": "\uE6AB"
-}, {
-  "font_class": "auth-filled",
-  "unicode": "\uE6CC"
-}, {
-  "font_class": "back",
-  "unicode": "\uE6B9"
-}, {
-  "font_class": "bars",
-  "unicode": "\uE627"
-}, {
-  "font_class": "calendar",
-  "unicode": "\uE6A0"
-}, {
-  "font_class": "calendar-filled",
-  "unicode": "\uE6C0"
-}, {
-  "font_class": "camera",
-  "unicode": "\uE65A"
-}, {
-  "font_class": "camera-filled",
-  "unicode": "\uE658"
-}, {
-  "font_class": "cart",
-  "unicode": "\uE631"
-}, {
-  "font_class": "cart-filled",
-  "unicode": "\uE6D0"
-}, {
-  "font_class": "chat",
-  "unicode": "\uE65D"
-}, {
-  "font_class": "chat-filled",
-  "unicode": "\uE659"
-}, {
-  "font_class": "chatboxes",
-  "unicode": "\uE696"
-}, {
-  "font_class": "chatboxes-filled",
-  "unicode": "\uE692"
-}, {
-  "font_class": "chatbubble",
-  "unicode": "\uE697"
-}, {
-  "font_class": "chatbubble-filled",
-  "unicode": "\uE694"
-}, {
-  "font_class": "checkbox",
-  "unicode": "\uE62B"
-}, {
-  "font_class": "checkbox-filled",
-  "unicode": "\uE62C"
-}, {
-  "font_class": "checkmarkempty",
-  "unicode": "\uE65C"
-}, {
-  "font_class": "circle",
-  "unicode": "\uE65B"
-}, {
-  "font_class": "circle-filled",
-  "unicode": "\uE65E"
-}, {
-  "font_class": "clear",
-  "unicode": "\uE66D"
-}, {
-  "font_class": "close",
-  "unicode": "\uE673"
-}, {
-  "font_class": "closeempty",
-  "unicode": "\uE66C"
-}, {
-  "font_class": "cloud-download",
-  "unicode": "\uE647"
-}, {
-  "font_class": "cloud-download-filled",
-  "unicode": "\uE646"
-}, {
-  "font_class": "cloud-upload",
-  "unicode": "\uE645"
-}, {
-  "font_class": "cloud-upload-filled",
-  "unicode": "\uE648"
-}, {
-  "font_class": "color",
-  "unicode": "\uE6CF"
-}, {
-  "font_class": "color-filled",
-  "unicode": "\uE6C9"
-}, {
-  "font_class": "compose",
-  "unicode": "\uE67F"
-}, {
-  "font_class": "contact",
-  "unicode": "\uE693"
-}, {
-  "font_class": "contact-filled",
-  "unicode": "\uE695"
-}, {
-  "font_class": "down",
-  "unicode": "\uE6B8"
-}, {
-  "font_class": "bottom",
-  "unicode": "\uE6B8"
-}, {
-  "font_class": "download",
-  "unicode": "\uE68D"
-}, {
-  "font_class": "download-filled",
-  "unicode": "\uE681"
-}, {
-  "font_class": "email",
-  "unicode": "\uE69E"
-}, {
-  "font_class": "email-filled",
-  "unicode": "\uE69A"
-}, {
-  "font_class": "eye",
-  "unicode": "\uE651"
-}, {
-  "font_class": "eye-filled",
-  "unicode": "\uE66A"
-}, {
-  "font_class": "eye-slash",
-  "unicode": "\uE6B3"
-}, {
-  "font_class": "eye-slash-filled",
-  "unicode": "\uE6B4"
-}, {
-  "font_class": "fire",
-  "unicode": "\uE6A1"
-}, {
-  "font_class": "fire-filled",
-  "unicode": "\uE6C5"
-}, {
-  "font_class": "flag",
-  "unicode": "\uE65F"
-}, {
-  "font_class": "flag-filled",
-  "unicode": "\uE660"
-}, {
-  "font_class": "folder-add",
-  "unicode": "\uE6A9"
-}, {
-  "font_class": "folder-add-filled",
-  "unicode": "\uE6C8"
-}, {
-  "font_class": "font",
-  "unicode": "\uE6A3"
-}, {
-  "font_class": "forward",
-  "unicode": "\uE6BA"
-}, {
-  "font_class": "gear",
-  "unicode": "\uE664"
-}, {
-  "font_class": "gear-filled",
-  "unicode": "\uE661"
-}, {
-  "font_class": "gift",
-  "unicode": "\uE6A4"
-}, {
-  "font_class": "gift-filled",
-  "unicode": "\uE6C4"
-}, {
-  "font_class": "hand-down",
-  "unicode": "\uE63D"
-}, {
-  "font_class": "hand-down-filled",
-  "unicode": "\uE63C"
-}, {
-  "font_class": "hand-up",
-  "unicode": "\uE63F"
-}, {
-  "font_class": "hand-up-filled",
-  "unicode": "\uE63E"
-}, {
-  "font_class": "headphones",
-  "unicode": "\uE630"
-}, {
-  "font_class": "heart",
-  "unicode": "\uE639"
-}, {
-  "font_class": "heart-filled",
-  "unicode": "\uE641"
-}, {
-  "font_class": "help",
-  "unicode": "\uE679"
-}, {
-  "font_class": "help-filled",
-  "unicode": "\uE674"
-}, {
-  "font_class": "home",
-  "unicode": "\uE662"
-}, {
-  "font_class": "home-filled",
-  "unicode": "\uE663"
-}, {
-  "font_class": "image",
-  "unicode": "\uE670"
-}, {
-  "font_class": "image-filled",
-  "unicode": "\uE678"
-}, {
-  "font_class": "images",
-  "unicode": "\uE650"
-}, {
-  "font_class": "images-filled",
-  "unicode": "\uE64B"
-}, {
-  "font_class": "info",
-  "unicode": "\uE669"
-}, {
-  "font_class": "info-filled",
-  "unicode": "\uE649"
-}, {
-  "font_class": "left",
-  "unicode": "\uE6B7"
-}, {
-  "font_class": "link",
-  "unicode": "\uE6A5"
-}, {
-  "font_class": "list",
-  "unicode": "\uE644"
-}, {
-  "font_class": "location",
-  "unicode": "\uE6AE"
-}, {
-  "font_class": "location-filled",
-  "unicode": "\uE6AF"
-}, {
-  "font_class": "locked",
-  "unicode": "\uE66B"
-}, {
-  "font_class": "locked-filled",
-  "unicode": "\uE668"
-}, {
-  "font_class": "loop",
-  "unicode": "\uE633"
-}, {
-  "font_class": "mail-open",
-  "unicode": "\uE643"
-}, {
-  "font_class": "mail-open-filled",
-  "unicode": "\uE63A"
-}, {
-  "font_class": "map",
-  "unicode": "\uE667"
-}, {
-  "font_class": "map-filled",
-  "unicode": "\uE666"
-}, {
-  "font_class": "map-pin",
-  "unicode": "\uE6AD"
-}, {
-  "font_class": "map-pin-ellipse",
-  "unicode": "\uE6AC"
-}, {
-  "font_class": "medal",
-  "unicode": "\uE6A2"
-}, {
-  "font_class": "medal-filled",
-  "unicode": "\uE6C3"
-}, {
-  "font_class": "mic",
-  "unicode": "\uE671"
-}, {
-  "font_class": "mic-filled",
-  "unicode": "\uE677"
-}, {
-  "font_class": "micoff",
-  "unicode": "\uE67E"
-}, {
-  "font_class": "micoff-filled",
-  "unicode": "\uE6B0"
-}, {
-  "font_class": "minus",
-  "unicode": "\uE66F"
-}, {
-  "font_class": "minus-filled",
-  "unicode": "\uE67D"
-}, {
-  "font_class": "more",
-  "unicode": "\uE64D"
-}, {
-  "font_class": "more-filled",
-  "unicode": "\uE64E"
-}, {
-  "font_class": "navigate",
-  "unicode": "\uE66E"
-}, {
-  "font_class": "navigate-filled",
-  "unicode": "\uE67A"
-}, {
-  "font_class": "notification",
-  "unicode": "\uE6A6"
-}, {
-  "font_class": "notification-filled",
-  "unicode": "\uE6C1"
-}, {
-  "font_class": "paperclip",
-  "unicode": "\uE652"
-}, {
-  "font_class": "paperplane",
-  "unicode": "\uE672"
-}, {
-  "font_class": "paperplane-filled",
-  "unicode": "\uE675"
-}, {
-  "font_class": "person",
-  "unicode": "\uE699"
-}, {
-  "font_class": "person-filled",
-  "unicode": "\uE69D"
-}, {
-  "font_class": "personadd",
-  "unicode": "\uE69F"
-}, {
-  "font_class": "personadd-filled",
-  "unicode": "\uE698"
-}, {
-  "font_class": "personadd-filled-copy",
-  "unicode": "\uE6D1"
-}, {
-  "font_class": "phone",
-  "unicode": "\uE69C"
-}, {
-  "font_class": "phone-filled",
-  "unicode": "\uE69B"
-}, {
-  "font_class": "plus",
-  "unicode": "\uE676"
-}, {
-  "font_class": "plus-filled",
-  "unicode": "\uE6C7"
-}, {
-  "font_class": "plusempty",
-  "unicode": "\uE67B"
-}, {
-  "font_class": "pulldown",
-  "unicode": "\uE632"
-}, {
-  "font_class": "pyq",
-  "unicode": "\uE682"
-}, {
-  "font_class": "qq",
-  "unicode": "\uE680"
-}, {
-  "font_class": "redo",
-  "unicode": "\uE64A"
-}, {
-  "font_class": "redo-filled",
-  "unicode": "\uE655"
-}, {
-  "font_class": "refresh",
-  "unicode": "\uE657"
-}, {
-  "font_class": "refresh-filled",
-  "unicode": "\uE656"
-}, {
-  "font_class": "refreshempty",
-  "unicode": "\uE6BF"
-}, {
-  "font_class": "reload",
-  "unicode": "\uE6B2"
-}, {
-  "font_class": "right",
-  "unicode": "\uE6B5"
-}, {
-  "font_class": "scan",
-  "unicode": "\uE62A"
-}, {
-  "font_class": "search",
-  "unicode": "\uE654"
-}, {
-  "font_class": "settings",
-  "unicode": "\uE653"
-}, {
-  "font_class": "settings-filled",
-  "unicode": "\uE6CE"
-}, {
-  "font_class": "shop",
-  "unicode": "\uE62F"
-}, {
-  "font_class": "shop-filled",
-  "unicode": "\uE6CD"
-}, {
-  "font_class": "smallcircle",
-  "unicode": "\uE67C"
-}, {
-  "font_class": "smallcircle-filled",
-  "unicode": "\uE665"
-}, {
-  "font_class": "sound",
-  "unicode": "\uE684"
-}, {
-  "font_class": "sound-filled",
-  "unicode": "\uE686"
-}, {
-  "font_class": "spinner-cycle",
-  "unicode": "\uE68A"
-}, {
-  "font_class": "staff",
-  "unicode": "\uE6A7"
-}, {
-  "font_class": "staff-filled",
-  "unicode": "\uE6CB"
-}, {
-  "font_class": "star",
-  "unicode": "\uE688"
-}, {
-  "font_class": "star-filled",
-  "unicode": "\uE68F"
-}, {
-  "font_class": "starhalf",
-  "unicode": "\uE683"
-}, {
-  "font_class": "trash",
-  "unicode": "\uE687"
-}, {
-  "font_class": "trash-filled",
-  "unicode": "\uE685"
-}, {
-  "font_class": "tune",
-  "unicode": "\uE6AA"
-}, {
-  "font_class": "tune-filled",
-  "unicode": "\uE6CA"
-}, {
-  "font_class": "undo",
-  "unicode": "\uE64F"
-}, {
-  "font_class": "undo-filled",
-  "unicode": "\uE64C"
-}, {
-  "font_class": "up",
-  "unicode": "\uE6B6"
-}, {
-  "font_class": "top",
-  "unicode": "\uE6B6"
-}, {
-  "font_class": "upload",
-  "unicode": "\uE690"
-}, {
-  "font_class": "upload-filled",
-  "unicode": "\uE68E"
-}, {
-  "font_class": "videocam",
-  "unicode": "\uE68C"
-}, {
-  "font_class": "videocam-filled",
-  "unicode": "\uE689"
-}, {
-  "font_class": "vip",
-  "unicode": "\uE6A8"
-}, {
-  "font_class": "vip-filled",
-  "unicode": "\uE6C6"
-}, {
-  "font_class": "wallet",
-  "unicode": "\uE6B1"
-}, {
-  "font_class": "wallet-filled",
-  "unicode": "\uE6C2"
-}, {
-  "font_class": "weibo",
-  "unicode": "\uE68B"
-}, {
-  "font_class": "weixin",
-  "unicode": "\uE691"
-}];
-
-// export const fontData = JSON.parse<IconsDataItem>(fontDataJson)
-exports.fontData = fontData;
 
 /***/ }),
 

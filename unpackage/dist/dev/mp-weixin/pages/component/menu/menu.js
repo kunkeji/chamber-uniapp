@@ -164,6 +164,44 @@ exports.default = void 0;
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default2 = {
   name: "menuIndex",
   props: {
@@ -182,7 +220,7 @@ var _default2 = {
     // 图标尺寸
     iconSize: {
       type: String,
-      default: "96rpx"
+      default: "80rpx"
     },
     // 文字尺寸
     fontSize: {
@@ -202,12 +240,12 @@ var _default2 = {
     // 图文间隔
     space: {
       type: String,
-      default: "16rpx"
+      default: "12rpx"
     },
     // 上下间隔
     marginTop: {
       type: String,
-      default: "32rpx"
+      default: "24rpx"
     }
   },
   methods: {

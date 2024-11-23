@@ -153,7 +153,7 @@ function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (O
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 var publicizePoster = function publicizePoster() {
   Promise.all(/*! require.ensure | pagesTools/component/publicize/poster */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pagesTools/component/publicize/poster")]).then((function () {
-    return resolve(__webpack_require__(/*! @/pagesTools/component/publicize/poster.vue */ 1057));
+    return resolve(__webpack_require__(/*! @/pagesTools/component/publicize/poster.vue */ 1065));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var _default = {

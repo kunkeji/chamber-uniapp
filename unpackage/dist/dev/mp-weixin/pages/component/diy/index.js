@@ -120,122 +120,122 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var carouselDiy = function carouselDiy() {
   __webpack_require__.e(/*! require.ensure | pages/component/diy/carouselDiy */ "pages/component/diy/carouselDiy").then((function () {
-    return resolve(__webpack_require__(/*! ./carouselDiy.vue */ 1085));
+    return resolve(__webpack_require__(/*! ./carouselDiy.vue */ 1093));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var imagesDiy = function imagesDiy() {
   __webpack_require__.e(/*! require.ensure | pages/component/diy/imagesDiy */ "pages/component/diy/imagesDiy").then((function () {
-    return resolve(__webpack_require__(/*! ./imagesDiy.vue */ 1092));
+    return resolve(__webpack_require__(/*! ./imagesDiy.vue */ 1100));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var navDiy = function navDiy() {
   __webpack_require__.e(/*! require.ensure | pages/component/diy/navDiy */ "pages/component/diy/navDiy").then((function () {
-    return resolve(__webpack_require__(/*! ./navDiy.vue */ 1099));
+    return resolve(__webpack_require__(/*! ./navDiy.vue */ 1107));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var cubeDiy = function cubeDiy() {
   __webpack_require__.e(/*! require.ensure | pages/component/diy/cubeDiy */ "pages/component/diy/cubeDiy").then((function () {
-    return resolve(__webpack_require__(/*! ./cubeDiy.vue */ 1106));
+    return resolve(__webpack_require__(/*! ./cubeDiy.vue */ 1114));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var infoCardDiy = function infoCardDiy() {
   __webpack_require__.e(/*! require.ensure | pages/component/diy/infoCardDiy */ "pages/component/diy/infoCardDiy").then((function () {
-    return resolve(__webpack_require__(/*! ./infoCardDiy.vue */ 1113));
+    return resolve(__webpack_require__(/*! ./infoCardDiy.vue */ 1121));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var textButtonDiy = function textButtonDiy() {
   __webpack_require__.e(/*! require.ensure | pages/component/diy/textButtonDiy */ "pages/component/diy/textButtonDiy").then((function () {
-    return resolve(__webpack_require__(/*! ./textButtonDiy.vue */ 1120));
+    return resolve(__webpack_require__(/*! ./textButtonDiy.vue */ 1128));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var titleDiy = function titleDiy() {
   Promise.all(/*! require.ensure | pages/component/diy/titleDiy */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/component/diy/titleDiy")]).then((function () {
-    return resolve(__webpack_require__(/*! ./titleDiy.vue */ 1127));
+    return resolve(__webpack_require__(/*! ./titleDiy.vue */ 1135));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var videoDiy = function videoDiy() {
   __webpack_require__.e(/*! require.ensure | pages/component/diy/videoDiy */ "pages/component/diy/videoDiy").then((function () {
-    return resolve(__webpack_require__(/*! ./videoDiy.vue */ 1134));
+    return resolve(__webpack_require__(/*! ./videoDiy.vue */ 1142));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var mapDiy = function mapDiy() {
   __webpack_require__.e(/*! require.ensure | pages/component/diy/mapDiy */ "pages/component/diy/mapDiy").then((function () {
-    return resolve(__webpack_require__(/*! ./mapDiy.vue */ 1141));
+    return resolve(__webpack_require__(/*! ./mapDiy.vue */ 1149));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var articleDiy = function articleDiy() {
   Promise.all(/*! require.ensure | pages/component/diy/articleDiy */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/component/diy/articleDiy")]).then((function () {
-    return resolve(__webpack_require__(/*! ./articleDiy.vue */ 1148));
+    return resolve(__webpack_require__(/*! ./articleDiy.vue */ 1156));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var introduceDiy = function introduceDiy() {
   __webpack_require__.e(/*! require.ensure | pages/component/diy/introduceDiy */ "pages/component/diy/introduceDiy").then((function () {
-    return resolve(__webpack_require__(/*! ./introduceDiy.vue */ 1155));
+    return resolve(__webpack_require__(/*! ./introduceDiy.vue */ 1163));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var memberDiy = function memberDiy() {
   Promise.all(/*! require.ensure | pages/component/diy/memberDiy */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/component/diy/memberDiy")]).then((function () {
-    return resolve(__webpack_require__(/*! ./memberDiy.vue */ 1162));
+    return resolve(__webpack_require__(/*! ./memberDiy.vue */ 1170));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var activityDiy = function activityDiy() {
   Promise.all(/*! require.ensure | pages/component/diy/activityDiy */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/component/diy/activityDiy")]).then((function () {
-    return resolve(__webpack_require__(/*! ./activityDiy.vue */ 1169));
+    return resolve(__webpack_require__(/*! ./activityDiy.vue */ 1177));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var chainsDiy = function chainsDiy() {
   Promise.all(/*! require.ensure | pages/component/diy/chainsDiy */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/component/diy/chainsDiy")]).then((function () {
-    return resolve(__webpack_require__(/*! ./chainsDiy.vue */ 1176));
+    return resolve(__webpack_require__(/*! ./chainsDiy.vue */ 1184));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var albumDiy = function albumDiy() {
   Promise.all(/*! require.ensure | pages/component/diy/albumDiy */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/component/diy/albumDiy")]).then((function () {
-    return resolve(__webpack_require__(/*! ./albumDiy.vue */ 1183));
+    return resolve(__webpack_require__(/*! ./albumDiy.vue */ 1191));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var goodsDiy = function goodsDiy() {
   Promise.all(/*! require.ensure | pages/component/diy/goodsDiy */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/component/diy/goodsDiy")]).then((function () {
-    return resolve(__webpack_require__(/*! ./goodsDiy.vue */ 1190));
+    return resolve(__webpack_require__(/*! ./goodsDiy.vue */ 1198));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var lineDiy = function lineDiy() {
   __webpack_require__.e(/*! require.ensure | pages/component/diy/lineDiy */ "pages/component/diy/lineDiy").then((function () {
-    return resolve(__webpack_require__(/*! ./lineDiy.vue */ 1197));
+    return resolve(__webpack_require__(/*! ./lineDiy.vue */ 1205));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var blankDiy = function blankDiy() {
   __webpack_require__.e(/*! require.ensure | pages/component/diy/blankDiy */ "pages/component/diy/blankDiy").then((function () {
-    return resolve(__webpack_require__(/*! ./blankDiy.vue */ 1204));
+    return resolve(__webpack_require__(/*! ./blankDiy.vue */ 1212));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var noticeDiy = function noticeDiy() {
   __webpack_require__.e(/*! require.ensure | pages/component/diy/noticeDiy */ "pages/component/diy/noticeDiy").then((function () {
-    return resolve(__webpack_require__(/*! ./noticeDiy.vue */ 1209));
+    return resolve(__webpack_require__(/*! ./noticeDiy.vue */ 1217));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var textDiy = function textDiy() {
   __webpack_require__.e(/*! require.ensure | pages/component/diy/textDiy */ "pages/component/diy/textDiy").then((function () {
-    return resolve(__webpack_require__(/*! ./textDiy.vue */ 1216));
+    return resolve(__webpack_require__(/*! ./textDiy.vue */ 1224));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var richTextDiy = function richTextDiy() {
   __webpack_require__.e(/*! require.ensure | pages/component/diy/richTextDiy */ "pages/component/diy/richTextDiy").then((function () {
-    return resolve(__webpack_require__(/*! ./richTextDiy.vue */ 1221));
+    return resolve(__webpack_require__(/*! ./richTextDiy.vue */ 1229));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var warnDiy = function warnDiy() {
   __webpack_require__.e(/*! require.ensure | pages/component/diy/warnDiy */ "pages/component/diy/warnDiy").then((function () {
-    return resolve(__webpack_require__(/*! ./warnDiy.vue */ 1226));
+    return resolve(__webpack_require__(/*! ./warnDiy.vue */ 1234));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var timelineDiy = function timelineDiy() {
   __webpack_require__.e(/*! require.ensure | pages/component/diy/timelineDiy */ "pages/component/diy/timelineDiy").then((function () {
-    return resolve(__webpack_require__(/*! ./timelineDiy.vue */ 1231));
+    return resolve(__webpack_require__(/*! ./timelineDiy.vue */ 1239));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var floatDiy = function floatDiy() {
   __webpack_require__.e(/*! require.ensure | pages/component/diy/floatDiy */ "pages/component/diy/floatDiy").then((function () {
-    return resolve(__webpack_require__(/*! ./floatDiy.vue */ 1238));
+    return resolve(__webpack_require__(/*! ./floatDiy.vue */ 1246));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var _default = {

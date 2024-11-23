@@ -422,12 +422,24 @@
 <style lang="scss">
 	.container {
 		position: relative;
+		min-height: 100vh;
+		background: #f5f6fa;
 
 		.container-image {
 			position: absolute;
 			top: 0;
 			left: 0;
 			right: 0;
+			// 添加渐变遮罩
+			&::after {
+				content: '';
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+			}
 		}
 
 		.container-main {
@@ -436,25 +448,38 @@
 			padding: 48rpx 32rpx 32rpx;
 
 			.main-column {
-				padding: 24rpx 0 32rpx;
-				border-radius: 16rpx;
+				padding: 28rpx 0 36rpx;
+				border-radius: 24rpx;
 				background: #ffffff;
 				margin-top: 32rpx;
+				box-shadow: 0 4rpx 16rpx rgba(0,0,0,0.05);
+				transition: all 0.3s ease;
+
+				&:active {
+					transform: scale(0.98);
+				}
 
 				.column-title {
 					padding: 0 32rpx;
 
 					.title {
-						color: #5A5B6E;
+						color: #333;
 						font-size: 32rpx;
 						font-weight: 600;
 						line-height: 44rpx;
 					}
 
 					.btn {
-						color: #5A5B6E;
+						color: #666;
 						font-size: 28rpx;
 						line-height: 40rpx;
+						padding: 4rpx 16rpx;
+						border-radius: 20rpx;
+						background: #f5f6fa;
+						
+						&:active {
+							opacity: 0.8;
+						}
 					}
 				}
 
@@ -466,18 +491,24 @@
 			.main-statement {
 				font-size: 24rpx;
 				line-height: 34rpx;
-				color: #8D929C;
-				margin-top: 32rpx;
+				color: #999;
+				margin-top: 40rpx;
 				text-align: center;
 			}
 
 			.main-support {
-				margin-top: 32rpx;
+				margin-top: 40rpx;
 
 				.image {
 					width: 400rpx;
 					height: auto;
-					border-radius: 16rpx;
+					border-radius: 20rpx;
+					box-shadow: 0 4rpx 16rpx rgba(0,0,0,0.08);
+					transition: all 0.3s ease;
+
+					&:active {
+						transform: scale(0.95);
+					}
 				}
 			}
 		}

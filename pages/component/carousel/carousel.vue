@@ -1,9 +1,10 @@
 <template>
 	<view class="component-carousel" :style="{height: height}">
-		<swiper class="carousel-swiper" :style="{'border-radius': radius}" autoplay circular :interval="4000" :duration="800" @change="imgChange">
+		<swiper class="carousel-swiper" :style="{'border-radius': radius}" autoplay circular :interval="4000" :duration="500" @change="imgChange">
 			<swiper-item v-for="(item, index) in showData" :key="index">
 				<view class="swiper-item" :style="{'border-radius': radius}" @click="toDetails(index)">
 					<image class="item-thumb" :src="item.image || item" mode="aspectFill"></image>
+					<!-- <view class="item-title" v-if="item.title">{{item.title}}</view> -->
 					<!-- #ifdef H5 -->
 					<wx-open-launch-weapp class="item-absolute" :appid="stringifyToParse(item.content).appid" :path="stringifyToParse(item.content).path" v-if="item.jump_type == 3">
 						<script type="text/wxtag-template">
@@ -122,17 +123,35 @@
 			width: 100%;
 			height: 100%;
 			overflow: hidden;
+			box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.1);
 
 			.swiper-item {
 				position: relative;
 				display: block;
 				width: 100%;
 				height: 100%;
+				transition: all 0.3s ease;
 
 				.item-thumb {
 					width: 100%;
 					height: 100%;
-					background-color: #f1f1f1;
+					background-color: #f5f5f5;
+					transition: transform 0.3s ease;
+					
+					&:hover {
+						transform: scale(1.02);
+					}
+				}
+
+				.item-title {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					padding: 20rpx;
+					background: linear-gradient(transparent, rgba(0,0,0,0.7));
+					color: #fff;
+					font-size: 28rpx;
 				}
 
 				.item-absolute {
@@ -150,20 +169,26 @@
 			position: absolute;
 			z-index: 1;
 			display: flex;
+			padding: 12rpx;
+			background: rgba(0,0,0,0.2);
+			border-radius: 20rpx;
 
 			.dots-item {
-				width: 24rpx;
-				height: 8rpx;
-				border-radius: 8rpx;
-				background: #FFFFFF;
-				margin-right: 4rpx;
+				width: 12rpx;
+				height: 12rpx;
+				border-radius: 50%;
+				background: rgba(255,255,255,0.6);
+				margin-right: 8rpx;
+				transition: all 0.3s ease;
 
 				&:last-child {
 					margin-right: 0;
 				}
 
 				&.active {
+					width: 24rpx;
 					background: var(--theme-color);
+					border-radius: 6rpx;
 				}
 			}
 		}

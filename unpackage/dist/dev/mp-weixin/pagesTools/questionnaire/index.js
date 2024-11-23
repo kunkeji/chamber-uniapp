@@ -158,7 +158,7 @@ function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (O
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 var questionItem = function questionItem() {
   Promise.all(/*! require.ensure | pagesTools/component/questionnaire/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pagesTools/component/questionnaire/index")]).then((function () {
-    return resolve(__webpack_require__(/*! @/pagesTools/component/questionnaire/index.vue */ 1064));
+    return resolve(__webpack_require__(/*! @/pagesTools/component/questionnaire/index.vue */ 1072));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var _default = {
