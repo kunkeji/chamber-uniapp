@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "我的",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "user-info": "/pages/component/user-info/user-info",
+    "order-menu": "/pages/component/menu/order",
+    "menu-center": "/pages/component/menu/menu",
+    "member-poster": "/pages/component/member/poster"
+  }
+}

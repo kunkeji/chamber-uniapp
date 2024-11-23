@@ -1,0 +1,1 @@
+.diy-title{display:flex;align-items:center;justify-content:space-between}.diy-title .title-text .italic{font-style:italic}.diy-title .title-text .bold{font-weight:700}.diy-title .title-btn{position:relative}.diy-title .title-btn .btn-absolute{display:block;position:absolute;top:0;left:0;right:0;bottom:0}

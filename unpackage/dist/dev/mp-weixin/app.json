@@ -1,0 +1,180 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/member/index",
+    "pages/mall/index",
+    "pages/demand/index",
+    "pages/mine/index",
+    "pages/login/index",
+    "pages/webview/webview",
+    "pages/webview/imageText",
+    "pages/mine/settings/system",
+    "pages/mine/problem/index",
+    "pages/mine/problem/details",
+    "pages/mine/settings/user",
+    "pages/mine/settings/agreement",
+    "pages/mine/subscribe/index",
+    "pages/index/association",
+    "pages/article/index",
+    "pages/article/details",
+    "pages/member/search/index",
+    "pages/member/search/result",
+    "pages/member/details",
+    "pages/member/industry",
+    "pages/member/units",
+    "pages/member/enterprise",
+    "pages/member/organization",
+    "pages/member/apply/index",
+    "pages/member/apply/enterprise",
+    "pages/member/apply/success",
+    "pages/member/fees/index",
+    "pages/member/fees/pay",
+    "pages/member/fees/success",
+    "pages/member/information",
+    "pages/demand/search/index",
+    "pages/demand/search/result",
+    "pages/diy/index",
+    "pages/diy/richText",
+    "pages/error/error",
+    "pages/error/browser",
+    "pages/canteen/canteen",
+    "pages/canteen/details"
+  ],
+  "subPackages": [
+    {
+      "root": "pagesMall",
+      "pages": [
+        "goods/details",
+        "goods/list",
+        "goods/order",
+        "address/index",
+        "address/add",
+        "order/success",
+        "order/list",
+        "order/detail",
+        "order/refund",
+        "order/rejected",
+        "order/refundList",
+        "order/refundDetail",
+        "order/pay"
+      ]
+    },
+    {
+      "root": "pagesDemand",
+      "pages": [
+        "demand/add",
+        "demand/details",
+        "demand/list",
+        "demand/edit",
+        "hotelBooking/hotelBooking",
+        "canteen/userorder",
+        "canteen/canteenDetails",
+        "canteen/shopList",
+        "shopDetails/shopDetails",
+        "shopDetails/goodsDetails",
+        "shopDetails/completeOrder",
+        "canteen/orderDetails"
+      ]
+    },
+    {
+      "root": "pagesTools",
+      "pages": [
+        "certificate/index",
+        "certificate/result",
+        "album/index",
+        "album/details",
+        "phoneBook/index",
+        "sequence/index",
+        "sequence/details",
+        "sequence/feedback",
+        "sequence/feedInfo",
+        "suggest/index",
+        "publicize/index",
+        "questionnaire/index",
+        "suggest/success",
+        "questionnaire/details",
+        "questionnaire/info",
+        "record/record",
+        "protocol/protocol",
+        "record/reservation",
+        "record/yyrecord",
+        "electricity/electricity",
+        "electricity/list",
+        "electricity/add",
+        "electricity/orderlist",
+        "electricity/adminelectricity"
+      ]
+    },
+    {
+      "root": "pagesActivity",
+      "pages": [
+        "index/index",
+        "index/details",
+        "index/order",
+        "index/success",
+        "order/index",
+        "order/details",
+        "order/success",
+        "verification/index",
+        "verification/details",
+        "search/index",
+        "search/result"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "智慧园区",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationStyle": "custom",
+    "backgroundColor": "#FFFFFF"
+  },
+  "tabBar": {
+    "color": "#ffffff",
+    "selectedColor": "#ffffff",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "visible": false
+      },
+      {
+        "pagePath": "pages/member/index",
+        "text": "会员",
+        "visible": false
+      },
+      {
+        "pagePath": "pages/mall/index",
+        "text": "商城",
+        "visible": false
+      },
+      {
+        "pagePath": "pages/demand/index",
+        "text": "供需",
+        "visible": false
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "visible": false
+      }
+    ]
+  },
+  "requiredPrivateInfos": [
+    "chooseLocation",
+    "getLocation"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "为了完善个人信息，小程序将获取您的位置"
+    }
+  },
+  "usingComponents": {
+    "title-bar": "/pages/component/title-bar/title-bar",
+    "tab-bar": "/pages/component/tab-bar/tab-bar",
+    "empty": "/pages/component/empty/empty"
+  }
+}

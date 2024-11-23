@@ -1,0 +1,199 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 容器 */
+.container {
+  padding: 20rpx;
+}
+/* 筛选栏 */
+.filter-bar {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40rpx;
+  margin-top: 20rpx;
+}
+.filter-item {
+  padding: 20rpx 40rpx;
+  border-radius: 40rpx;
+  background-color: #f5f5f5;
+  color: #333;
+  font-size: 32rpx;
+}
+.filter-item.active {
+  background-color: #007aff;
+  color: white;
+}
+/* 列表 */
+.repair-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40rpx;
+}
+/* 卡片 */
+.repair-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 30rpx;
+  border-radius: 20rpx;
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.1);
+}
+/* 卡片头部 */
+.repair-header {
+  display: flex;
+  align-items: center;
+}
+.repair-image {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 20rpx;
+  margin-right: 30rpx;
+}
+.repair-info {
+  flex: 1;
+}
+.repair-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+.repair-content {
+  font-size: 28rpx;
+  color: #666;
+}
+/* 卡片底部 */
+.repair-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30rpx;
+}
+.repair-status {
+  font-size: 28rpx;
+  padding: 10rpx 20rpx;
+  border-radius: 30rpx;
+  color: white;
+}
+.status-1 {
+  background-color: #ff9500;
+}
+.status-2 {
+  background-color: #007aff;
+}
+.status-3 {
+  background-color: #28cd41;
+}
+.repair-anonymity,
+.repair-time {
+  font-size: 24rpx;
+  color: #999;
+}
+

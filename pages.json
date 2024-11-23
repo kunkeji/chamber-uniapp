@@ -1,0 +1,685 @@
+
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/member/index",
+			"style": {
+				"navigationBarTitleText": "会员风采",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/mall/index",
+			"style": {
+				"navigationBarTitleText": "商城",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/demand/index",
+			"style": {
+				"navigationBarTitleText": "供需",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/mine/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/webview/webview",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/webview/imageText",
+			"style": {
+				"navigationBarTitleText": "详情"
+			}
+		},
+		{
+			"path": "pages/mine/settings/system",
+			"style": {
+				"navigationBarTitleText": "系统设置"
+			}
+		},
+		{
+			"path": "pages/mine/problem/index",
+			"style": {
+				"navigationBarTitleText": "常见问题",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/mine/problem/details",
+			"style": {
+				"navigationBarTitleText": "常见问题"
+			}
+		},
+		{
+			"path": "pages/mine/settings/user",
+			"style": {
+				"navigationBarTitleText": "修改信息"
+			}
+		},
+		{
+			"path": "pages/mine/settings/agreement",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/mine/subscribe/index",
+			"style": {
+				"navigationBarTitleText": "消息订阅",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/index/association",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/article/index",
+			"style": {
+				"navigationBarTitleText": "新闻资讯",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/article/details",
+			"style": {
+				"navigationBarTitleText": "新闻资讯"
+			}
+		},
+		{
+			"path": "pages/member/search/index",
+			"style": {
+				"navigationBarTitleText": "会员搜索"
+			}
+		},
+		{
+			"path": "pages/member/search/result",
+			"style": {
+				"navigationBarTitleText": "搜索结果"
+			}
+		},
+		{
+			"path": "pages/member/details",
+			"style": {
+				"navigationBarTitleText": "会员详情"
+			}
+		},
+		{
+			"path": "pages/member/industry",
+			"style": {
+				"navigationBarTitleText": "会员风采"
+			}
+		},
+		{
+			"path": "pages/member/units",
+			"style": {
+				"navigationBarTitleText": "会员单位"
+			}
+		},
+		{
+			"path": "pages/member/enterprise",
+			"style": {
+				"navigationBarTitleText": "会员企业"
+			}
+		},
+		{
+			"path": "pages/member/organization",
+			"style": {
+				"navigationBarTitleText": "会员团体"
+			}
+		},
+		{
+			"path": "pages/member/apply/index",
+			"style": {
+				"navigationBarTitleText": "申请入会"
+			}
+		},
+		{
+			"path": "pages/member/apply/enterprise",
+			"style": {
+				"navigationBarTitleText": "申请入会"
+			}
+		},
+		{
+			"path": "pages/member/apply/success",
+			"style": {
+				"navigationBarTitleText": "提交成功"
+			}
+		},
+		{
+			"path": "pages/member/fees/index",
+			"style": {
+				"navigationBarTitleText": "会费缴纳"
+			}
+		},
+		{
+			"path": "pages/member/fees/pay",
+			"style": {
+				"navigationBarTitleText": "会费缴纳"
+			}
+		},
+		{
+			"path": "pages/member/fees/success",
+			"style": {
+				"navigationBarTitleText": "提交成功"
+			}
+		},
+		{
+			"path": "pages/member/information",
+			"style": {
+				"navigationBarTitleText": "编辑资料"
+			}
+		},
+		{
+			"path": "pages/demand/search/index",
+			"style": {
+				"navigationBarTitleText": "供需搜索"
+			}
+		},
+		{
+			"path": "pages/demand/search/result",
+			"style": {
+				"navigationBarTitleText": "搜索结果"
+			}
+		},
+		{
+			"path": "pages/diy/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/diy/richText",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/error/error",
+			"style": {
+				"navigationBarTitleText": "系统维护"
+			}
+		},
+		{
+			"path": "pages/error/browser",
+			"style": {
+				"navigationBarTitleText": "系统错误"
+			}
+		},
+		{
+			"path" : "pages/canteen/canteen",
+			"style" : 
+			{
+				"navigationBarTitleText" :"食堂"
+			}
+		},
+		{
+			"path" : "pages/canteen/details",
+			"style" : 
+			{
+				"navigationBarTitleText" :"详情"
+			}
+		}
+		
+	],
+	"subPackages": [{
+			"root": "pagesMall",
+			"pages": [{
+					"path": "goods/details",
+					"style": {
+						"navigationBarTitleText": "商品详情"
+					}
+				},
+				{
+					"path": "goods/list",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "goods/order",
+					"style": {
+						"navigationBarTitleText": "订单确认"
+					}
+				},
+				{
+					"path": "address/index",
+					"style": {
+						"navigationBarTitleText": "地址管理"
+					}
+				},
+				{
+					"path": "address/add",
+					"style": {
+						"navigationBarTitleText": ""
+					}
+				}, {
+					"path": "order/success",
+					"style": {
+						"navigationBarTitleText": ""
+					}
+				},
+				{
+					"path": "order/list",
+					"style": {
+						"navigationBarTitleText": "我的订单",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "order/detail",
+					"style": {
+						"navigationBarTitleText": "订单详情"
+					}
+				},
+				{
+					"path": "order/refund",
+					"style": {
+						"navigationBarTitleText": "退款原因"
+					}
+				},
+				{
+					"path": "order/rejected",
+					"style": {
+						"navigationBarTitleText": "填写信息"
+					}
+				},
+				{
+					"path": "order/refundList",
+					"style": {
+						"navigationBarTitleText": "退款列表",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "order/refundDetail",
+					"style": {
+						"navigationBarTitleText": "退款详情"
+					}
+				},
+				{
+					"path": "order/pay",
+					"style": {
+						"navigationBarTitleText": "订单支付"
+					}
+				}
+			]
+		},
+		{
+			"root": "pagesDemand",
+			"pages": [{
+					"path": "demand/add",
+					"style": {
+						"navigationBarTitleText": "发布供需"
+					}
+				},
+				{
+					"path": "demand/details",
+					"style": {
+						"navigationBarTitleText": "供需详情"
+					}
+				},
+				{
+					"path": "demand/list",
+					"style": {
+						"navigationBarTitleText": "我的发布",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "demand/edit",
+					"style": {
+						"navigationBarTitleText": "修改供需"
+					}
+				},
+				{
+					"path" : "hotelBooking/hotelBooking",
+					"style" : 
+					{
+						"navigationBarTitleText" : "入住申请"
+					}
+				},
+				
+				{
+					"path" : "canteen/userorder",
+					"style" : 
+					{
+						"navigationBarTitleText" : ""
+					}
+				},
+				{
+					"path" : "canteen/canteenDetails",
+					"style" : 
+					{
+						"navigationBarTitleText" : ""
+					}
+				},
+				{
+					"path" : "canteen/shopList",
+					"style" : 
+					{
+						"navigationBarTitleText" : ""
+					}
+				},
+				{
+					"path" : "shopDetails/shopDetails",
+					"style" : 
+					{
+						"navigationBarTitleText" : ""
+					}
+				},
+				{
+					"path" : "shopDetails/goodsDetails",
+					"style" : 
+					{
+						"navigationBarTitleText" : ""
+					}
+				},
+				{
+					"path" : "shopDetails/completeOrder",
+					"style" : 
+					{
+						"navigationBarTitleText" : ""
+					}
+				},
+				{
+					"path" : "canteen/orderDetails",
+					"style" : 
+					{
+						"navigationBarTitleText" : ""
+					}
+				}
+			]
+		},
+		{
+			"root": "pagesTools",
+			"pages": [{
+					"path": "certificate/index",
+					"style": {
+						"navigationBarTitleText": "证书查询"
+					}
+				},
+				{
+					"path": "certificate/result",
+					"style": {
+						"navigationBarTitleText": "查询结果"
+					}
+				},
+				{
+					"path": "album/index",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "album/details",
+					"style": {
+						"navigationBarTitleText": ""
+					}
+				},
+				{
+					"path": "phoneBook/index",
+					"style": {
+						"navigationBarTitleText": "通讯录"
+					}
+				},
+				{
+					"path": "sequence/index",
+					"style": {
+						"navigationBarTitleText": "活动接龙",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "sequence/details",
+					"style": {
+						"navigationBarTitleText": "活动接龙详情"
+					}
+				},
+				{
+					"path": "sequence/feedback",
+					"style": {
+						"navigationBarTitleText": "活动接龙反馈"
+					}
+				},
+				{
+					"path": "sequence/feedInfo",
+					"style": {
+						"navigationBarTitleText": "反馈信息"
+					}
+				},
+				{
+					"path": "suggest/index",
+					"style": {
+						"navigationBarTitleText": "需求建议"
+					}
+				},
+				{
+					"path": "publicize/index",
+					"style": {
+						"navigationBarTitleText": "推广会员"
+					}
+				},
+				{
+					"path": "questionnaire/index",
+					"style": {
+						"navigationBarTitleText": "问卷调查",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "suggest/success",
+					"style": {
+						"navigationBarTitleText": "提交成功"
+					}
+				},
+				{
+					"path": "questionnaire/details",
+					"style": {
+						"navigationBarTitleText": "问卷详情"
+					}
+				},
+				{
+					"path": "questionnaire/info",
+					"style": {
+						"navigationBarTitleText": "问卷反馈详情"
+					}
+				},
+				{
+					"path" : "record/record",
+					"style" : 
+					{
+						"navigationBarTitleText" : "报修记录"
+					}
+				},
+				{
+					"path" : "protocol/protocol",
+					"style" : 
+					{
+						"navigationBarTitleText" : "协议页面"
+					}
+				},
+				{
+					"path" : "record/reservation",
+					"style" : 
+					{
+						"navigationBarTitleText" : "场地预约"
+					}
+				},
+				{
+					"path" : "record/yyrecord",
+					"style" : 
+					{
+						"navigationBarTitleText" : "预约记录"
+					}
+				},
+				{
+					"path" : "electricity/electricity"
+				},
+				{
+					"path" : "electricity/list"
+				},
+				{
+					"path" : "electricity/add"
+				},
+				{
+					"path" : "electricity/orderlist"
+				},
+				{
+					"path" : "electricity/adminelectricity"
+				}
+			]
+		},
+		{
+			"root": "pagesActivity",
+			"pages": [{
+					"path": "index/index",
+					"style": {
+						"navigationBarTitleText": "活动列表",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "index/details",
+					"style": {
+						"navigationBarTitleText": "活动详情"
+					}
+				},
+				{
+					"path": "index/order",
+					"style": {
+						"navigationBarTitleText": "订单详情"
+					}
+				},
+				{
+					"path": "index/success",
+					"style": {
+						"navigationBarTitleText": "支付成功"
+					}
+				},
+				{
+					"path": "order/index",
+					"style": {
+						"navigationBarTitleText": "我的活动",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "order/details",
+					"style": {
+						"navigationBarTitleText": "活动详情"
+					}
+				},
+				{
+					"path": "order/success",
+					"style": {
+						"navigationBarTitleText": "提交成功"
+					}
+				},
+				{
+					"path": "verification/index",
+					"style": {
+						"navigationBarTitleText": "活动核销"
+					}
+				},
+				{
+					"path": "verification/details",
+					"style": {
+						"navigationBarTitleText": "活动核销"
+					}
+				},
+				{
+					"path": "search/index",
+					"style": {
+						"navigationBarTitleText": "活动搜索"
+					}
+				},
+				{
+					"path": "search/result",
+					"style": {
+						"navigationBarTitleText": "搜索结果"
+					}
+				}
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "智慧园区",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"navigationStyle": "custom",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+		"color": "#ffffff",
+		"selectedColor": "#ffffff",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"custom": true,
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"visible": false
+			},
+			{
+				"pagePath": "pages/member/index",
+				"text": "会员",
+				"visible": false
+			},
+			{
+				"pagePath": "pages/mall/index",
+				"text": "商城",
+				"visible": false
+			},
+			{
+				"pagePath": "pages/demand/index",
+				"text": "供需",
+				"visible": false
+			},
+			{
+				"pagePath": "pages/mine/index",
+				"text": "我的",
+				"visible": false
+			}
+		]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}

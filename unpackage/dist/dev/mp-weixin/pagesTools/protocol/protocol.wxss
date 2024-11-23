@@ -1,0 +1,60 @@
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.content {
+  flex: 1;
+  padding: 20rpx;
+  padding-bottom: 120rpx; /* Adjust padding to make space for the fixed footer */
+  overflow-y: auto;
+}
+.richText {
+  color: #333;
+  font-size: 32rpx;
+  line-height: 1.6;
+  margin-bottom: 40rpx;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+  background-color: #fff;
+  border-top: 1rpx solid #eee;
+}
+.checkbox-label {
+  display: flex;
+  align-items: center;
+}
+.agree-text {
+  margin-left: 16rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+.next-button {
+  background-color: #007aff;
+  color: #fff;
+  border: none;
+  margin: 0;
+  border-radius: 8rpx;
+  font-size: 32rpx;
+}
+.countdown-message {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20rpx 0;
+  font-size: 28rpx;
+  color: #666;
+  background-color: #fff;
+  border-top: 1rpx solid #eee;
+}
+

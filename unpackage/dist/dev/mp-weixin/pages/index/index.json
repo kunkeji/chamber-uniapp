@@ -1,0 +1,15 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "diy-mode": "/pages/component/diy/index",
+    "carousel": "/pages/component/carousel/carousel",
+    "menu-nav": "/pages/component/menu/carousel",
+    "member-item": "/pages/component/member/scroll",
+    "activity-item": "/pages/component/activity/index",
+    "chains-item": "/pages/component/chains/index",
+    "album-item": "/pages/component/album/index",
+    "goods-item": "/pages/component/goods/index",
+    "article-item": "/pages/component/article/index"
+  }
+}
