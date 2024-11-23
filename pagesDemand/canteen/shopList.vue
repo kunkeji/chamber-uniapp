@@ -14,7 +14,7 @@
 					<switch :checked="isBusinessOpen" @change="toggleBusinessStatus" color="#07c160"/>
 				</view>
 			</view>
-			
+			<!-- 增加一行代码测试 -->
 			<!-- 店铺选择下拉菜单 -->
 			<view class="dropdown-menu" v-if="showDropdown">
 				<view class="dropdown-item" 
