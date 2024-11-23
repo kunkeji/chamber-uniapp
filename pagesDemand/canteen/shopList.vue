@@ -26,7 +26,7 @@
 				</view>
 			</view>
 		</view>
-
+ 
 		<!-- 营业额统计卡片 -->
 		<view class="revenue-cards">
 			<view class="revenue-card">
