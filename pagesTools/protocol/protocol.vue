@@ -2,17 +2,37 @@
   <view class="page">
     <title-bar :title="navigationBarTitle"></title-bar>
     <view class="content">
-      <view v-html="richText" class="richText"></view>
-      <view v-if="showCheckbox" class="footer">
-        <checkbox-group @change="checkboxChange">
-          <label class="checkbox-label">
-            <checkbox value="agree" :checked="isChecked" />
-            <text class="agree-text">我已阅读并同意以上协议</text>
-          </label>
-        </checkbox-group>
-        <button @click="nextStep" class="next-button">{{ buttonLabel }}</button>
+      <view class="content-card">
+        <view class="protocol-header">
+          <text class="protocol-title">预约协议</text>
+          <text class="protocol-subtitle">请仔细阅读以下内容</text>
+        </view>
+        <rich-text :nodes="richText" class="richText"></rich-text>
       </view>
-      <view v-else class="countdown-message">{{ buttonLabel }}</view>
+    </view>
+    
+    <view v-if="showCheckbox" class="footer">
+      <checkbox-group @change="checkboxChange">
+        <label class="checkbox-label">
+          <checkbox value="agree" :checked="isChecked" color="#4CAF50" />
+          <text class="agree-text">我已阅读并同意以上协议</text>
+        </label>
+      </checkbox-group>
+      <button @click="nextStep" 
+              class="next-button" 
+              :class="{ 'button-active': isChecked }"
+              :disabled="!isChecked">
+        {{ buttonLabel }}
+      </button>
+    </view>
+    
+    <view v-else class="countdown-message">
+      <view class="countdown-container">
+        <text class="countdown-text">{{ buttonLabel }}</text>
+        <view class="progress-bar">
+          <view class="progress" :style="{ width: progressWidth + '%' }"></view>
+        </view>
+      </view>
     </view>
   </view>
 </template>
@@ -28,7 +48,8 @@
 				buttonLabel: '请认真阅读以上协议', // 按钮文字
 				countdown: 5, // 倒计时秒数
 				type: '', // 接收的类型
-				id: 0
+				id: 0,
+				progressWidth: 0,
 			}
 		},
 		onLoad(options) {
@@ -57,9 +78,11 @@
 			},
 			// 开始倒计时
 			startCountdown() {
+				const totalTime = this.countdown;
 				let timer = setInterval(() => {
 					if (this.countdown > 0) {
 						this.countdown--;
+						this.progressWidth = ((totalTime - this.countdown) / totalTime) * 100;
 						this.buttonLabel = `请认真阅读以上协议（${this.countdown}秒）`;
 					} else {
 						clearInterval(timer);
@@ -97,23 +120,46 @@
 
 <style>
 .page {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  min-height: 100vh;
+  background-color: #f5f6fa;
 }
 
 .content {
-  flex: 1;
-  padding: 20rpx;
-  padding-bottom: 120rpx; /* Adjust padding to make space for the fixed footer */
-  overflow-y: auto;
+  padding: 30rpx;
+  padding-bottom: 180rpx;
+}
+
+.content-card {
+  background: #fff;
+  border-radius: 24rpx;
+  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.protocol-header {
+  padding: 40rpx;
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  color: #fff;
+}
+
+.protocol-title {
+  font-size: 36rpx;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10rpx;
+}
+
+.protocol-subtitle {
+  font-size: 24rpx;
+  opacity: 0.9;
 }
 
 .richText {
+  padding: 40rpx;
   color: #333;
-  font-size: 32rpx;
-  line-height: 1.6;
-  margin-bottom: 40rpx;
+  font-size: 28rpx;
+  line-height: 1.8;
+  letter-spacing: 0.5rpx;
 }
 
 .footer {
@@ -121,32 +167,44 @@
   left: 0;
   bottom: 0;
   width: 100%;
+  padding: 30rpx;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-top: 1rpx solid rgba(0, 0, 0, 0.05);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20rpx;
-  background-color: #fff;
-  border-top: 1rpx solid #eee;
+  flex-direction: column;
+  gap: 20rpx;
 }
 
 .checkbox-label {
   display: flex;
   align-items: center;
+  padding: 10rpx 0;
 }
 
 .agree-text {
   margin-left: 16rpx;
-  font-size: 28rpx;
+  font-size: 26rpx;
   color: #666;
 }
 
 .next-button {
-  background-color: #007aff;
+  width: 100%;
+  height: 88rpx;
+  border-radius: 44rpx;
+  background: #e0e0e0;
   color: #fff;
-  border: none;
-  margin: 0;
-  border-radius: 8rpx;
-  font-size: 32rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.button-active {
+  background: #4CAF50;
+  box-shadow: 0 6rpx 20rpx rgba(76, 175, 80, 0.3);
 }
 
 .countdown-message {
@@ -154,11 +212,34 @@
   left: 0;
   bottom: 0;
   width: 100%;
+  padding: 30rpx;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.countdown-container {
   text-align: center;
-  padding: 20rpx 0;
+}
+
+.countdown-text {
   font-size: 28rpx;
   color: #666;
-  background-color: #fff;
-  border-top: 1rpx solid #eee;
+  margin-bottom: 20rpx;
+  display: block;
+}
+
+.progress-bar {
+  height: 6rpx;
+  background: #eee;
+  border-radius: 3rpx;
+  overflow: hidden;
+  margin: 20rpx auto;
+  width: 80%;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #4CAF50, #45a049);
+  transition: width 0.3s linear;
 }
 </style>
