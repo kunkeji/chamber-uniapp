@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "退款详情",
-  "usingComponents": {
-    "store": "/pagesMall/component/store/store"
-  }
-}

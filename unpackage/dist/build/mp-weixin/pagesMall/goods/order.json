@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "订单确认",
-  "usingComponents": {
-    "store": "/pagesMall/component/store/store",
-    "address-modal": "/pagesMall/component/modal/address"
-  }
-}

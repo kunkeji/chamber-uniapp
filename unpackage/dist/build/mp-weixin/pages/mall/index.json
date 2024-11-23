@@ -1,9 +1,0 @@
-{
-  "navigationBarTitleText": "商城",
-  "enablePullDownRefresh": true,
-  "usingComponents": {
-    "carousel": "/pages/component/mall/carousel",
-    "hot-goods": "/pages/component/goods/hot",
-    "goods-list": "/pages/component/goods/list"
-  }
-}

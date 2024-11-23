@@ -1,1 +1,0 @@
-.container .container-main{padding:32rpx}.container .container-main .main-list{padding:0 32rpx;border-radius:10rpx;background:#fff}.container .container-main .main-list .list-item{color:#5a5b6e;font-size:28rpx;line-height:40rpx;padding:32rpx 0;border-top:1rpx solid rgba(0,0,0,.1)}.container .container-main .main-list .list-item:first-child{border-top:none}

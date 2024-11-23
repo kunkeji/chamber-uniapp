@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "推广会员",
-  "usingComponents": {
-    "publicize-poster": "/pagesTools/component/publicize/poster"
-  }
-}
