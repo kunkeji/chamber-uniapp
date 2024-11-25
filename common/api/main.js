@@ -254,5 +254,29 @@ export default {
 			auth:true,
 			method:"GET",
 		}
+	},
+	/**e企查 */
+	Building:{
+		get_building_list:{
+			url:"/api/wdsxh.building/get_building_list",
+			auth:true,
+			method:"GET",
+		},
+		get_room_list:{
+			url:"/api/wdsxh.building/get_room_list",
+			auth:true,
+			method:"GET",
+		},
+		get_room_detail:{
+			url:"/api/wdsxh.building/get_room_detail",
+			auth:true,
+			method:"GET",
+		},
+		search_room:{
+			url:"/api/wdsxh.building/search_room",
+			auth:true,
+			method:"GET",
+		}
 	}
+
 };

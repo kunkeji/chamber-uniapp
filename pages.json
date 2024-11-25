@@ -1,6 +1,6 @@
 
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [
 		{
 			"path": "pages/index/index",
 			"style": {
@@ -330,6 +330,30 @@
 					"style": {
 						"navigationBarTitleText": "订单支付"
 					}
+				},
+				{
+					"path": "building/index",
+					"style": {
+						"navigationBarTitleText": "楼宇列表"
+					}
+				},
+				{
+					"path": "building/floor",
+					"style": {
+						"navigationBarTitleText": "楼层列表"
+					}
+				},
+				{
+					"path": "building/corp",
+					"style": {
+						"navigationBarTitleText": "企业列表"
+					}
+				},
+				{
+					"path": "building/details",
+					"style": {
+						"navigationBarTitleText": "楼宇详情"
+					}
 				}
 			]
 		},
@@ -651,8 +675,8 @@
 				"visible": false
 			},
 			{
-				"pagePath": "pages/member/index",
-				"text": "会员",
+				"pagePath": "pages/canteen/canteen",
+				"text": "食堂",
 				"visible": false
 			},
 			{
