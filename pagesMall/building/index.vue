@@ -1,7 +1,32 @@
 <template>
     <view class="page-container">
         <title-bar :title="screenName"></title-bar> 
-        <view class="container">
+        <view class="search-box">
+            <view class="search-input-wrap">
+                <text class="iconfont icon-search"></text>
+                <input
+                    class="search-input"
+                    v-model="keyword"
+                    placeholder="搜索公司"
+                    placeholder-class="placeholder"
+                    @input="handleSearch"
+                    confirm-type="search"
+                    @confirm="handleSearchClick"
+                />
+                <text class="clear-icon" v-if="keyword" @tap="clearKeyword">×</text>
+            </view>
+        </view>
+        <view class="search-result" v-if="keyword && searchList.length">
+            <view 
+                class="search-item"
+                v-for="item in searchList"
+                :key="item.id"
+                @click="handleSearchItemClick(item)"
+            >
+                <text>{{item.name}}</text>
+            </view>
+        </view>
+        <view class="container" v-else>
             <view class="building-list">
                 <view 
                     class="building-item"
@@ -32,7 +57,9 @@ export default {
         return {
             keyword: '',
             buildingList: [],
-            screenName: '楼宇列表'
+            screenName: '楼宇列表',
+            searchList: [],
+            searchTimer: null
         }
     },
     onLoad() {
@@ -47,9 +74,39 @@ export default {
                 }
             })
         },
-        // 搜索
-        handleSearch() {
-            // TODO: 实现搜索功能
+        // 处理搜索输入
+        handleSearch(e) {
+            if(this.searchTimer) clearTimeout(this.searchTimer)
+            
+            this.searchTimer = setTimeout(() => {
+                const value = e.detail.value // 从事件对象中获取输入值
+                
+                if(!value) {
+                    this.searchList = []
+                    return
+                }
+                
+                this.$util.request('main.Building.search_room', {
+                    name: value
+                }).then(res => {
+                    if(res.code === 1) {
+                        this.searchList = res.data
+                    }
+                })
+            }, 300)
+        },
+        // 处理搜索按钮点击
+        handleSearchClick() {
+            if(!this.keyword) return
+            uni.navigateTo({
+                url: `/pagesMall/building/corp?name=${encodeURIComponent(this.keyword)}`
+            })
+        },
+        // 处理搜索结果项点击
+        handleSearchItemClick(item) {
+            uni.navigateTo({
+                url: `/pagesMall/building/details?id=${item.id}`
+            })
         },
         // 点击建筑
         handleBuildingClick(item) {
@@ -58,6 +115,11 @@ export default {
             uni.navigateTo({
                 url: `/pagesMall/building/floor?buildingId=${item.id}&floorCount=${item.floorCount}`
             })
+        },
+        // 清空搜索关键词
+        clearKeyword() {
+            this.keyword = ''
+            this.searchList = []
         }
     
     }
@@ -179,6 +241,61 @@ export default {
     }
     100% {
         box-shadow: 0 0 0 0 rgba(74, 144, 226, 0);
+    }
+}
+
+.search-box {
+    padding: 20rpx 30rpx;
+    background: #fff;
+    
+    .search-input-wrap {
+        display: flex;
+        align-items: center;
+        background-color: #F5F5F5;
+        padding: 15rpx 30rpx;
+        border-radius: 36rpx;
+        
+        .icon-search {
+            font-size: 32rpx;
+            color: #999;
+            margin-right: 20rpx;
+        }
+        
+        .search-input {
+            flex: 1;
+            height: 60rpx;
+            font-size: 28rpx;
+            color: #333;
+        }
+        
+        .placeholder {
+            color: #999;
+            font-size: 28rpx;
+        }
+        
+        .clear-icon {
+            padding: 0 20rpx;
+            color: #999;
+            font-size: 40rpx;
+        }
+    }
+}
+
+.search-result {
+    background: #fff;
+    
+    .search-item {
+        padding: 30rpx;
+        border-bottom: 1rpx solid #eee;
+        
+        &:active {
+            background: #f5f5f5;
+        }
+        
+        text {
+            font-size: 28rpx;
+            color: #333;
+        }
     }
 }
 </style>
