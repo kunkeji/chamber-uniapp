@@ -28,7 +28,7 @@
 					<!-- 会员风采 -->
 					<view class="main-column">
 						<view class="column-title flex align-items-center">
-							<view class="title flex-item">会员风采</view>
+							<view class="title flex-item">会员列表</view>
 							<view class="btn" @click="toMember()">更多+</view>
 						</view>
 						<view class="column-box">
@@ -48,7 +48,7 @@
 						</view>
 					</view>
 					<!-- 活动接龙 -->
-					<view class="main-column">
+					<view class="main-column" v-if="chainsList.length">
 						<view class="column-title flex align-items-center">
 							<view class="title flex-item">活动接龙</view>
 							<view class="btn" @click="toChains()">更多+</view>

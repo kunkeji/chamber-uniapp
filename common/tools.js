@@ -290,7 +290,7 @@ function toPage(e, verify = 1) {
 		// 底部导航
 		let tabbarList = [
 			'/pages/index/index',
-			'/pages/member/index',
+			'/pages/canteen/canteen',
 			'/pages/mall/index',
 			'/pages/demand/index',
 			'/pages/mine/index'
