@@ -263,6 +263,10 @@
 						});
 					}
 				}).catch(err => {
+					uni.showToast({
+						title:"查询失败，请稍后再试",
+						icon: 'none'
+					});
 					console.error('Error querying balance:', err);
 				});
 			},

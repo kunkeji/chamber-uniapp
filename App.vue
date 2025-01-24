@@ -2,7 +2,7 @@
 	export default {
 		globalData: {
 			// 接口地址
-			adminPath: "https://association.kunkeji.com",
+			adminPath: "https://x.cxcepark.cc",
 			// 入会字段
 			applyField: [],
 		},
@@ -34,7 +34,7 @@
 							})
 						}
 					})
-				}
+				} 
 			} else {
 				wx.showModal({
 					title: '提示',

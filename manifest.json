@@ -1,5 +1,5 @@
 {
-    "name" : "商协会2.0",
+    "name" : "澄心澄e",
     "appid" : "__UNI__3B8B119",
     "description" : "",
     "versionName" : "1.0.0",
@@ -50,7 +50,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "wxa05e25b90b222f78",
+        "appid" : "wx3f8ad32ebc8c835a",
         "setting" : {
             "urlCheck" : false
         },

@@ -26,7 +26,7 @@
 						<menu-nav :show-data="menuList" @toPage="toImageText"></menu-nav>
 					</view>
 					<!-- 会员风采 -->
-					<view class="main-column">
+					<view class="main-column" style="display: none;">
 						<view class="column-title flex align-items-center">
 							<view class="title flex-item">会员列表</view>
 							<view class="btn" @click="toMember()">更多+</view>
@@ -70,7 +70,7 @@
 						</view>
 					</view>
 					<!-- 商城商品 -->
-					<view class="main-column">
+					<view class="main-column" style="display: none;">
 						<view class="column-title flex align-items-center">
 							<view class="title flex-item">商城商品</view>
 							<view class="btn" @click="toMall()">更多+</view>

@@ -29,7 +29,7 @@
 				
 				<!-- 文章内容 -->
 				<view class="article-content">
-					<mp-html :content="articleInfo.content"></mp-html>
+					<mp-html domain="https://x.cxcepark.cc" :content="articleInfo.content"></mp-html>
 				</view>
 			</view>
 		</view>

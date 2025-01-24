@@ -36,7 +36,7 @@
 									<text class="info-level-rank">{{ item.member.level_name }}</text>|<text class="info-level-time">{{ getDateBefore(item.createtime) }}</text>
 								</view>
 							</view>
-							<view class="demand-person-contact" :style="{ background:themeColor }" @click.stop="onContact(item.member.mobile)">联系TA</view>
+							<!-- <view class="demand-person-contact" :style="{ background:themeColor }" @click.stop="onContact(item.member.mobile)">联系TA</view> -->
 						</view>
 						<!-- 供需内容 -->
 						<view class="demand-info">

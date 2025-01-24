@@ -44,36 +44,92 @@
 							</view>
 						</view>
 					</view>
-				</view>
-				<!-- 底部按钮 -->
-				<view class="demand-bottom" v-if="type == 1">
-					<!-- #ifdef MP-WEIXIN -->
-					<view style="display: flex;">
-						<view class="demand-bottom-share">
-							<button style="background-color: transparent;" open-type="share">
-								<view class="bottom-share-button">
-									<view class="shareImg" :style="{'background-image': 'url('+ iconShare +')'}" v-if="iconShare"></view>
-									<view class="shareTxt">
-										分享
+
+					<!-- 添加评论区 -->
+					<view class="demand-comments">
+						<view class="comments-title">评论区</view>
+						<!-- 评论列表 -->
+						<view class="comments-list" v-if="commentList.length > 0">
+							<view class="comment-item" v-for="(item, index) in commentList" :key="index">
+								<view class="comment-header">
+									<view class="comment-user alignments">
+										<image :src="item.member.avatar" mode="aspectFill" class="user-avatar"></image>
+										<view class="user-info">
+											<view class="user-name">
+												{{item.member.name}}
+												<text v-if="item.is_author" class="author-tag">作者</text>
+											</view>
+											<view class="comment-time">{{getDateBefore(item.createtime)}}</view>
+										</view>
+									</view>
+									<text 
+										v-if="item.is_self" 
+										class="delete-btn" 
+										@click="deleteComment(item.id)"
+									>删除</text>
+								</view>
+								<view class="comment-content">{{decodeHtml(item.content)}}</view>
+								<view class="comment-actions">
+									<text class="action-btn" @click="toggleReplyInput(item)">
+										{{replyTo && replyTo.id === item.id ? '取消回复' : '回复'}}
+									</text>
+								</view>
+								
+								<!-- 子评论列表 -->
+								<view class="reply-list" v-if="item.children && item.children.length > 0">
+									<view class="reply-item" v-for="(reply, replyIndex) in item.children" :key="replyIndex">
+										<view class="reply-header">
+											<view class="comment-user alignments">
+												<image :src="reply.member.avatar" mode="aspectFill" class="user-avatar"></image>
+												<view class="user-info">
+													<view class="user-name">
+														{{reply.member.name}}
+														<text v-if="reply.is_author" class="author-tag">作者</text>
+														<text class="reply-to">回复</text>
+														{{item.member.name}}
+													</view>
+													<view class="comment-time">{{getDateBefore(reply.createtime)}}</view>
+												</view>
+											</view>
+											<text 
+												v-if="reply.is_self" 
+												class="delete-btn" 
+												@click="deleteComment(reply.id)"
+											>删除</text>
+										</view>
+										<view class="comment-content">{{decodeHtml(reply.content)}}</view>
 									</view>
 								</view>
-							</button>
+							</view>
 						</view>
-						<view class="demand-bottom-button" :style="{ background: themeColor }" @click="onContact()">联系TA</view>
+						<view class="no-comment" v-else>
+							暂无评论，快来抢沙发吧~
+						</view>
+						
+						<!-- 评论输入框 -->
+						<view class="comment-input-box">
+							<view class="input-wrapper" :class="{'with-reply': replyTo}">
+								<input 
+									type="text" 
+									v-model="commentContent"
+									:placeholder="replyTo ? `回复 ${replyTo.member.name}` : '说点什么吧...'"
+									class="comment-input"
+									@confirm="submitComment"
+									@focus="onInputFocus"
+									@blur="onInputBlur"
+								/>
+								<text v-if="replyTo" class="cancel-reply" @click="cancelReply">×</text>
+							</view>
+							<view 
+								class="submit-btn" 
+								:style="{ background: themeColor }"
+								@click="submitComment"
+							>发送</view>
+						</view>
 					</view>
-					<!-- #endif -->
-					<!-- #ifndef MP-WEIXIN -->
-					<view class="demand-bottom-button" style="width: 100%;" :style="{ background: themeColor }" @click="onContact()">联系TA</view>
-					<!-- #endif -->
-					<view class="safe-padding"></view>
+
 				</view>
-				<view class="main-bottom" v-else-if="type == 2">
-					<view class="alignment justify-content-between">
-						<view class="main-bottom-button" :style="{ 'width': '49%', 'background': themeColor  }" @click="editDemand(demandDetails.business.id)">修改</view>
-						<view class="main-bottom-button" :style="{ 'width': '49%', 'background': '#FF2525'  }" @click="delDemand(demandDetails.business.id)">删除</view>
-					</view>
-					<view class="safe-padding"></view>
-				</view>
+				<view style="height: 100rpx;"></view>
 			</block>
 			<view class="main-login" v-else-if="showLogin">
 				<image class="login-image" :src="loginImg" mode="aspectFit"></image>
@@ -81,6 +137,8 @@
 				<view class="login-btn" :style="{ background: themeColor }" @click="toLogin()">前往登录</view>
 				<view class="login-btn cancel" @click="toBack()">返回上一页</view>
 			</view>
+			<!-- 底部按钮 -->
+			
 		</view>
 	</view>
 </template>
@@ -105,6 +163,10 @@
 				demandDetails: {},
 				// 是否显示登录提示
 				showLogin: false,
+				commentList: [], // 评论列表
+				commentContent: '', // 评论内容
+				replyTo: null, // 当前回复的评论对象
+				isInputFocused: false, // 新增：输入框焦点状态
 			};
 		},
 		computed: {
@@ -135,6 +197,7 @@
 			this.getDemandDetails(() => {
 				uni.hideLoading()
 				this.loadEnd = true
+				this.getCommentList() // 获取评论列表
 				// #ifdef H5
 				this.initConfig()
 				// #endif
@@ -329,6 +392,123 @@
 					uni.navigateBack()
 				}
 			},
+			// 获取评论列表
+			getCommentList() {
+				this.$util.request("demand.commentList", {
+					article_id: this.id
+				}).then(res => {
+					if (res.code == 1) {
+						this.commentList = res.data
+					}
+				}).catch(error => {
+					console.error('获取评论列表失败', error)
+				})
+			},
+			// 解码HTML实体
+			decodeHtml(html) {
+				if(!html) return '';
+				return html.replace(/&quot;/g, '"')
+					.replace(/&amp;/g, '&')
+					.replace(/&lt;/g, '<')
+					.replace(/&gt;/g, '>')
+					.replace(/&#39;/g, "'");
+			},
+			// 显示回复输入框
+			showReplyInput(comment) {
+				this.replyTo = comment
+				this.commentContent = ''
+			},
+			// 提交评论
+			submitComment() {
+				if (!this.commentContent.trim()) {
+					uni.showToast({
+						title: '请输入评论内容',
+						icon: 'none'
+					})
+					return
+				}
+				
+				const params = {
+					article_id: this.id,
+					content: this.commentContent
+				}
+				
+				// 如果是回复评论,添加父评论id
+				if (this.replyTo) {
+					params.parent_comment_id = this.replyTo.id
+				}
+				
+				this.$util.request("demand.addComment", params).then(res => {
+					if (res.code == 1) {
+						uni.showToast({
+							title: '评论成功'
+						})
+						this.commentContent = ''
+						this.replyTo = null
+						this.getCommentList() // 重新获取评论列表
+					} else {
+						uni.showToast({
+							title: res.msg,
+							icon: 'none'
+						})
+					}
+				}).catch(error => {
+					console.error('提交评论失败', error)
+				})
+			},
+			// 切换回复输入框
+			toggleReplyInput(comment) {
+				if (this.replyTo && this.replyTo.id === comment.id) {
+					this.cancelReply()
+				} else {
+					this.showReplyInput(comment)
+				}
+			},
+			// 取消回复
+			cancelReply() {
+				this.replyTo = null
+				this.commentContent = ''
+			},
+			// 输入框获得焦点
+			onInputFocus() {
+				this.isInputFocused = true
+			},
+			// 输入框失去焦点
+			onInputBlur() {
+				this.isInputFocused = false
+			},
+			// 删除评论
+			deleteComment(commentId) {
+				uni.showModal({
+					title: '提示',
+					content: '确定要删除这条评论吗？',
+					success: (res) => {
+						if (res.confirm) {
+							this.$util.request("demand.deleteComment", {
+								id: commentId
+							}).then(res => {
+								if (res.code == 1) {
+									uni.showToast({
+										title: '删除成功'
+									})
+									this.getCommentList() // 重新获取评论列表
+								} else {
+									uni.showToast({
+										title: res.msg,
+										icon: 'none'
+									})
+								}
+							}).catch(error => {
+								console.error('删除评论失败', error)
+								uni.showToast({
+									title: '删除失败',
+									icon: 'none'
+								})
+							})
+						}
+					}
+				})
+			}
 		}
 	}
 </script>
@@ -421,6 +601,7 @@
 
 				.demand-info {
 					padding-top: 32rpx;
+					border-bottom: 1rpx solid #efefef;
 
 					.demand-info-title {
 						font-size: 32rpx;
@@ -481,50 +662,21 @@
 				}
 			}
 
-			.demand-bottom {
+			.demand-bottom,
+			.main-bottom {
 				position: fixed;
 				bottom: 0;
-				width: 100%;
+				left: 0;
+				right: 0;
 				background: #FFF;
 				padding: 16rpx 24rpx;
-
-				.demand-bottom-share {
-					flex: 1;
-
-					.bottom-share-button {
-						display: flex;
-						flex-direction: column;
-						align-items: center;
-						width: 50rpx;
-
-						.shareTxt {
-							padding-top: 8rpx;
-							font-size: 24rpx;
-							line-height: 30rpx;
-							color: #5A5B6E;
-						}
-
-						.shareImg {
-							width: 32rpx;
-							height: 32rpx;
-							background-size: 32rpx;
-						}
-					}
-
-
+				z-index: 10; // 增加z-index确保在评论输入框之上
+			}
+			
+			.demand-comments {
+				.comment-input-box {
+					z-index: 9; // 确保评论输入框在底部按钮之下
 				}
-
-				.demand-bottom-button {
-					width: 240rpx;
-					height: 80rpx;
-					background: #999999;
-					color: rgba(255, 255, 255, 1);
-					text-align: center;
-					line-height: 80rpx;
-					border-radius: 16rpx;
-					font-size: 32rpx;
-				}
-
 			}
 
 			.main-bottom {
@@ -584,6 +736,215 @@
 						background: #dedede;
 						color: #999;
 						margin-top: 48rpx;
+					}
+				}
+			}
+
+			.demand-comments {
+				margin-top: 32rpx;
+				
+				.comments-title {
+					font-size: 32rpx;
+					font-weight: 600;
+					color: #5A5B6E;
+					margin-bottom: 24rpx;
+				}
+				
+				.comments-list {
+					// 通用的评论样式（父评论和子评论共用）
+					%comment-base {
+						.comment-header,
+						.reply-header {
+							display: flex;
+							justify-content: space-between;
+							align-items: flex-start;
+							
+							.comment-user {
+								flex: 1;
+								
+								.user-avatar {
+									border-radius: 50%;
+								}
+								
+								.user-info {
+									margin-left: 16rpx;
+									
+									.user-name {
+										font-size: 28rpx;
+										color: #5A5B6E;
+										font-weight: 500;
+									}
+									
+									.comment-time {
+										font-size: 24rpx;
+										color: #999;
+										margin-top: 4rpx;
+									}
+								}
+							}
+						}
+						
+						.delete-btn {
+							font-size: 24rpx;
+							color: #FF5151;
+							padding: 4rpx 0 4rpx 24rpx;
+						}
+						
+						.comment-content {
+							margin-top: 16rpx;
+							font-size: 28rpx;
+							color: #5A5B6E;
+							line-height: 40rpx;
+						}
+					}
+					
+					// 父评论样式
+					.comment-item {
+						padding: 24rpx 0;
+						border-bottom: 1px solid #EEEEEE;
+						@extend %comment-base;
+						
+						.comment-user {
+							.user-avatar {
+								width: 64rpx;
+								height: 64rpx;
+							}
+						}
+						
+						.comment-actions {
+							margin-top: 16rpx;
+							
+							.action-btn {
+								font-size: 24rpx;
+								color: #999;
+								padding: 4rpx 16rpx;
+							}
+						}
+						
+						// 子评论列表样式
+						.reply-list {
+							margin-left: 64rpx;
+							margin-top: 16rpx;
+							padding: 16rpx;
+							background: #F5F5F5;
+							border-radius: 8rpx;
+							
+							// 子评论样式
+							.reply-item {
+								@extend %comment-base;
+								padding: 16rpx 0;
+								border-bottom: 1px solid #EEEEEE;
+								
+								&:last-child {
+									border-bottom: none;
+								}
+								
+								.comment-user {
+									.user-avatar {
+										width: 48rpx;
+										height: 48rpx;
+									}
+									
+									.user-name {
+										.reply-to {
+											font-size: 24rpx;
+											color: #999;
+											margin: 0 8rpx;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				
+				.no-comment {
+					text-align: center;
+					color: #999;
+					font-size: 28rpx;
+					padding: 32rpx 0;
+				}
+				
+				.comment-input-box {
+					position: fixed;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					padding: 24rpx;
+					background: #fff;
+					display: flex;
+					align-items: center;
+					border-top: 1px solid #EEEEEE;
+					
+					.input-wrapper {
+						flex: 1;
+						position: relative;
+						display: flex;
+						align-items: center;
+						background: #F5F5F5;
+						border-radius: 36rpx;
+						padding-right: 16rpx;
+
+						&.with-reply {
+							background: #E8F3FF;
+						}
+
+						.comment-input {
+							flex: 1;
+							height: 72rpx;
+							padding: 0 24rpx;
+							font-size: 28rpx;
+							background: transparent;
+						}
+
+						.cancel-reply {
+							font-size: 32rpx;
+							color: #999;
+							padding: 0 16rpx;
+						}
+					}
+					
+					.submit-btn {
+						min-width: 120rpx;
+						height: 72rpx;
+						border-radius: 36rpx;
+						margin-left: 16rpx;
+						color: #fff;
+						font-size: 28rpx;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
+				}
+			}
+		}
+	}
+
+	.container {
+		.container-main {
+			.demand-comments {
+				.comments-list {
+					%comment-base {
+						.comment-header,
+						.reply-header {
+							.comment-user {
+								.user-info {
+									.user-name {
+										display: flex;
+										align-items: center;
+										
+										.author-tag {
+											font-size: 20rpx;
+											color: #fff;
+											background: #FF9C37;
+											padding: 2rpx 8rpx;
+											border-radius: 4rpx;
+											margin-left: 12rpx;
+										}
+									}
+								}
+							}
+						}
 					}
 				}
 			}

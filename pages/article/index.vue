@@ -7,7 +7,7 @@
 			<!-- 顶部导航 -->
 			<scroll-view scroll-x class="main-screen" :style="{top: titleBarHeight + 'px'}" v-if="screenList.length">
 				<view class="screen-wrapper">
-					<view class="screen-item" @click="changeScreen(0)">
+					<view class="screen-item" @click="changeScreen(0)" v-if="!pagetype">
 						<view class="text" :class="{active: selectScreen == 0}">全部</view>
 					</view>
 					<view class="screen-item" v-for="item in screenList" :key="item.id" @click="changeScreen(item.id)">
@@ -56,6 +56,7 @@
 				page: 1,
 				limit: 10,
 				hasMore: false,
+				pagetype:null
 			}
 		},
 		computed: {
@@ -73,6 +74,10 @@
 			// #endif
 		},
 		onLoad(option) {
+			console.log(option)
+			if(option.type){
+				this.pagetype = option.type
+			}
 			uni.showLoading({
 				title: "加载中"
 			})
@@ -165,9 +170,15 @@
 			},
 			// 获取文章分类
 			getArticleCategory() {
-				this.$util.request("main.article.category").then(res => {
+				// 判断分类是否为空
+				this.$util.request("main.article.category",{type:this.pagetype?this.pagetype:0}).then(res => {
 					if (res.code == 1) {
 						this.screenList = res.data
+						if(this.pagetype){
+							this.changeScreen(res.data[0].id)
+						}
+						
+						// console.log(res.data[0].id)
 					} else {
 						uni.showToast({
 							title: res.msg,

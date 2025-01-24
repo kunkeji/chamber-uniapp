@@ -17,6 +17,25 @@ export default {
 		auth: true,
 		method: 'GET',
 	},
+	// 评论列表
+	commentList: {
+		url: '/api/wdsxh/business/comments',
+		auth: true,
+		method: 'GET',
+	},
+	// 添加评论
+	addComment: {
+		url: '/api/wdsxh/business/add_comments',
+		auth: true,
+		method: 'POST',
+	},
+
+	// 删除评论
+	deleteComment: {
+		url: '/api/wdsxh/business/del_comments',
+		auth: true,
+		method: 'GET',
+	},
 	// 发布
 	businessAdd: {
 		url: '/api/wdsxh/business/add',

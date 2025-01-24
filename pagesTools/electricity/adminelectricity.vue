@@ -142,7 +142,7 @@
 					mask: true
 				});
 				
-				that.$util.request("mall.balance", {
+				that.$util.request("mall.balance",{
 					electricity: this.electricity
 				}).then(res => {
 					if (res.code === 1) {
@@ -155,7 +155,6 @@
 						});
 					}
 				}).catch(err => {
-					console.error('Error querying balance:', err);
 					uni.showToast({
 						title: '查询失败，请重试',
 						icon: 'none'
