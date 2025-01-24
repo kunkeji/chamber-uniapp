@@ -1,7 +1,8 @@
 <template>
-	<page-meta :page-style="'overflow:' + (pageShow ? 'hidden' : 'visible')"></page-meta>
-	<view class="container">
-		<!-- 标题栏 -->
+	<view>
+		<page-meta :page-style="'overflow:' + (pageShow ? 'hidden' : 'visible')"></page-meta>
+		<view class="container">
+			<!-- 标题栏 -->
 		<title-bar title="我的"></title-bar>
 		<!-- 背景图 -->
 		<image class="container-image" src="/static/mine_bg.png" mode="widthFix"></image>
@@ -65,6 +66,7 @@
 		<tab-bar></tab-bar>
 		<!-- 电子会牌 -->
 		<member-poster ref="memberPoster" @onChange="pageChange"></member-poster>
+	</view>
 	</view>
 </template>
 
@@ -467,6 +469,12 @@
 						font-size: 32rpx;
 						font-weight: 600;
 						line-height: 44rpx;
+					}
+
+					.points {
+						color: #FF6B00;
+						font-size: 36rpx;
+						font-weight: 600;
 					}
 
 					.btn {

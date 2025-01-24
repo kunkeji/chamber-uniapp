@@ -4,7 +4,12 @@
 		<view class="user-info-content flex align-items-center" v-if="token" @click="toModifyUser()">
 			<image class="content-avatar" :src="userInfo.avatar" mode="aspectFill"></image>
 			<view class="content-box flex-item">
-				<view class="name text-ellipsis">{{userInfo.nickname}}</view>
+				<view class="name-row flex align-items-center">
+					<text class="name text-ellipsis">{{userInfo.nickname}}</text>
+					<view class="points-box" @click.stop="toPoints">
+						<text class="points-label">查看积分</text>
+					</view>
+				</view>
 				<view class="phone text-ellipsis">{{userInfo.mobile}}</view>
 			</view>
 		</view>
@@ -173,6 +178,11 @@
 					path: "/pages/member/fees/index"
 				})
 			},
+			toPoints() {
+				uni.navigateTo({
+					url: '/pages/mine/points/index'
+				})
+			}
 		},
 	}
 </script>
@@ -192,11 +202,45 @@
 			}
 
 			.content-box {
-				.name {
-					color: #5A5B6E;
-					font-size: 36rpx;
-					font-weight: 600;
-					line-height: 50rpx;
+				.name-row {
+					.name {
+						color: #5A5B6E;
+						font-size: 36rpx;
+						font-weight: 600;
+						line-height: 50rpx;
+						margin-right: 16rpx;
+						flex: 1;
+					}
+					
+					.points-box {
+						background: rgba(50, 93, 255, 0.1);
+						padding: 4rpx 12rpx;
+						border-radius: 20rpx;
+						display: inline-flex;
+						align-items: center;
+						flex-shrink: 0;
+						
+						.points-label {
+							font-size: 22rpx;
+							color: #325DFF;
+						}
+						
+						.points-value {
+							font-size: 24rpx;
+							color: #325DFF;
+							font-weight: bold;
+							margin: 0 6rpx;
+						}
+						
+						.points-arrow {
+							font-size: 22rpx;
+							color: #325DFF;
+						}
+						
+						&:active {
+							opacity: 0.7;
+						}
+					}
 				}
 
 				.phone {

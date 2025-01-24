@@ -30,4 +30,10 @@ export default {
 		auth: false,
 		method: 'GET',
 	},
+	// 积分明细
+	pointsList: {
+		url: '/api/wdsxh.points/detail',
+		auth: true,
+		method: 'GET',
+	},
 };
