@@ -7,7 +7,11 @@
 				<view class="name-row flex align-items-center">
 					<text class="name text-ellipsis">{{userInfo.nickname}}</text>
 					<view class="points-box" @click.stop="toPoints">
-						<text class="points-label">查看积分</text>
+						<text class="points-label">积分明细</text>
+						<!-- <text class="points-value">{{userInfo.points || 0}}</text> -->
+					</view>
+					<view class="points-mall-box" @click.stop="toPointsMall">
+						<text class="mall-label">积分商城</text>
 					</view>
 				</view>
 				<view class="phone text-ellipsis">{{userInfo.mobile}}</view>
@@ -182,6 +186,12 @@
 				uni.navigateTo({
 					url: '/pages/mine/points/index'
 				})
+			},
+			// 跳转积分商城
+			toPointsMall() {
+				uni.navigateTo({
+					url: '/pages/mine/points/mall/index'
+				})
 			}
 		},
 	}
@@ -219,20 +229,34 @@
 						display: inline-flex;
 						align-items: center;
 						flex-shrink: 0;
+						margin-right: 16rpx;
 						
 						.points-label {
 							font-size: 22rpx;
 							color: #325DFF;
+							margin-right: 6rpx;
 						}
 						
 						.points-value {
 							font-size: 24rpx;
 							color: #325DFF;
 							font-weight: bold;
-							margin: 0 6rpx;
 						}
 						
-						.points-arrow {
+						&:active {
+							opacity: 0.7;
+						}
+					}
+					
+					.points-mall-box {
+						background: rgba(50, 93, 255, 0.1);
+						padding: 4rpx 12rpx;
+						border-radius: 20rpx;
+						display: inline-flex;
+						align-items: center;
+						flex-shrink: 0;
+						
+						.mall-label {
 							font-size: 22rpx;
 							color: #325DFF;
 						}

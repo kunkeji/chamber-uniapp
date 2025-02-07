@@ -2,6 +2,7 @@
 	export default {
 		globalData: {
 			// 接口地址
+			// adminPath: "https://x.cxcepark.cc",
 			adminPath: "http://localhost",
 			// 入会字段
 			applyField: [],
@@ -62,6 +63,7 @@
 			this.getAssociation()
 			this.getTabBar()
 			this.getConfig()
+			this.autoSign()
 		},
 		onShow: function() {},
 		onHide: function() {},
@@ -84,9 +86,23 @@
 					console.error("获取商协信息", error)
 				})
 			},
+			// 自动签到
+			autoSign() {
+				this.$util.request("main.autoSign", {}, this.globalData.adminPath).then(res => {
+					if (res.code == 1) {
+						uni.showToast({
+							title: res.msg,
+							icon: 'none'
+						})
+					}
+				}).catch(error => {
+					console.error("自动签到", error)
+				})
+			},
 			// 获取底部导航
 			getTabBar() {
 				this.$util.request("main.tabbar", {}, this.globalData.adminPath).then(res => {
+
 					if (res.code == 1) {
 						this.$store.commit('app/setTabBar', res.data)
 					} else {

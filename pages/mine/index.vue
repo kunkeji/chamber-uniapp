@@ -365,6 +365,7 @@
 			// 获取用户信息
 			getUserInfo(fn) {
 				this.$util.request("mine.user").then(res => {
+					console.log("用户信息",res)
 					if (fn) fn()
 					if (res.code == 1) {
 						uni.setStorageSync("userInfo", res.data)

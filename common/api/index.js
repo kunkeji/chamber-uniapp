@@ -9,6 +9,7 @@ import activity from "./activity.js"
 import album from "./album.js"
 import sequence from "./sequence.js"
 import questionnaire from "./questionnaire.js"
+import points from "./points.js"
 export default {
 	// 公共模块
 	main,
@@ -30,4 +31,6 @@ export default {
 	sequence,
 	// 问卷调查模块
 	questionnaire,
+	// 积分模块
+	points,
 };

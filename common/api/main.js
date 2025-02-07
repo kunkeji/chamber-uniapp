@@ -47,9 +47,16 @@ export default {
 		auth: false,
 		method: 'GET',
 	},
+	// 自动签到
+	autoSign: {
+		url: '/api/wdsxh.sign/sign',
+		auth: true,
+		method: 'POST',
+	},
 	// 省市区管理
 	address: {
 		// 获取省份
+
 		province: {
 			url: '/api/wdsxh/goods/address/address_province',
 			auth: false,
