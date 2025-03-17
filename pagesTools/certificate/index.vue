@@ -63,7 +63,7 @@ export default {
       // 获取当前选中类型下的场地列表
       this.filteredVenues = this.venueTypes[index].list.map(item => ({
         ...item,
-        image: `http://101.43.47.5${item.image}` // 修正图片路径
+        image: `http://62.234.215.13${item.image}` // 修正图片路径
       }));
     },
     goToDetails(venue) {

@@ -2,8 +2,8 @@
 	export default {
 		globalData: {
 			// 接口地址
-			// adminPath: "https://x.cxcepark.cc",
-			adminPath: "http://localhost",
+			adminPath: "https://x.cxcepark.cc",
+			// adminPath: "http://localhost",
 			// 入会字段
 			applyField: [],
 		},

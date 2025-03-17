@@ -199,6 +199,15 @@
 							mode: 1,
 							path: "/pagesTools/electricity/list",
 						}
+					},
+					{
+						id: 8,
+						icon: "/static/mine/member_8.png",
+						name: "每日问答",
+						info: {
+							mode: 1,
+							path: "/pages/mine/points/question/index",
+						}
 					}
 				],
 				// 系统中心

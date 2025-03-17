@@ -275,6 +275,18 @@
 			"style": {
 				"navigationBarTitleText": "订单详情"
 			}
+		},
+		{
+			"path": "pages/mine/points/question/index",
+			"style": {
+				"navigationBarTitleText": "每日问答"
+			}
+		},
+		{
+			"path": "pages/mine/points/question/logs",
+			"style": {
+				"navigationBarTitleText": "答题记录"
+			}
 		}
 		
 	],

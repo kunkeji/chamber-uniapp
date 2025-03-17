@@ -262,12 +262,22 @@
 			},
 			// 跳转详情
 			toDetails(item) {
-				this.$util.toPage({
-					mode: 1,
-					path: "/pagesMall/goods/list?id=" + item.id + "&name=" + item.name
-				})
+				console.log(item.name)
+				if(item.name == '积分兑换'){
+					this.$util.toPage({
+						mode: 1,
+
+						path: "/pages/mine/points/mall/index"
+					})
+				}else{
+					this.$util.toPage({
+						mode: 1,
+						path: "/pagesMall/goods/list?id=" + item.id + "&name=" + item.name
+					})
+				}
 			},
 			// 热销产品下一页
+
 			hotNextPage() {
 				if (this.hotHasMore) {
 					this.hotPage++

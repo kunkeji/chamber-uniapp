@@ -1,4 +1,28 @@
 export default {
+	// 获取今日问题
+	questionToday: {
+		url: '/api/wdsxh.question/today',
+		method: 'GET',
+		loading: false,
+		toast: false
+	},
+	
+	// 提交答案
+	questionSubmit: {
+		url: '/api/wdsxh.question/submit',
+		method: 'POST',
+		loading: true,
+		toast: true
+	},
+	
+	// 获取答题记录
+	questionLogs: {
+		url: '/api/wdsxh.question/logs',
+		method: 'GET',
+		loading: false,
+		toast: false
+	},
+	
 	// 获取积分商品列表
 	goodsList: {
 		url: '/api/wdsxh.points_mall/goods',

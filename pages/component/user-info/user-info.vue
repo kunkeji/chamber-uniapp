@@ -8,7 +8,6 @@
 					<text class="name text-ellipsis">{{userInfo.nickname}}</text>
 					<view class="points-box" @click.stop="toPoints">
 						<text class="points-label">积分明细</text>
-						<!-- <text class="points-value">{{userInfo.points || 0}}</text> -->
 					</view>
 					<view class="points-mall-box" @click.stop="toPointsMall">
 						<text class="mall-label">积分商城</text>
@@ -192,7 +191,7 @@
 				uni.navigateTo({
 					url: '/pages/mine/points/mall/index'
 				})
-			}
+			},
 		},
 	}
 </script>
@@ -260,7 +259,7 @@
 							font-size: 22rpx;
 							color: #325DFF;
 						}
-						
+							
 						&:active {
 							opacity: 0.7;
 						}
